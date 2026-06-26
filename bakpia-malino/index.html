@@ -3,52 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bakpia Malino – Oleh-Oleh Khas Sulawesi Selatan</title>
-  <meta name="description" content="Bakpia Malino, oleh-oleh khas Malino, Sulawesi Selatan. Tersedia rasa Markisa, Coklat, Keju, Ubi Ungu, Kacang Hijau & Mix. Halal, 100% Indonesia." />
+  <title>Bakpia Malino - Oleh-Oleh Khas Sulawesi Selatan</title>
+  <meta name="description" content="Bakpia Malino, oleh-oleh khas Malino, Sulawesi Selatan. Tersedia rasa Markisa, Coklat, Keju, Ubi Ungu, Kacang Hijau dan Mix. Halal, 100% Indonesia." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary: #e8621a;
-      --primary-dark: #c44d0f;
-      --primary-light: #f5883a;
-      --gold: #f5a623;
-      --gold-light: #ffd166;
-      --dark: #1a0a00;
-      --dark-2: #2d1500;
-      --text: #3a1c00;
-      --text-muted: #7a4f2a;
-      --bg: #fffbf5;
-      --bg-warm: #fff3e0;
+      --primary: #dd1505;
+      --primary-dark: #9f0c04;
+      --primary-light: #ff4b38;
+      --gold: #ffcf32;
+      --gold-light: #ffe37a;
+      --dekatlokal-blue: #0255f5;
+      --whatsapp: #25d366;
+      --dark: #26080b;
+      --dark-2: #460e12;
+      --text: #2b1417;
+      --text-muted: #76565a;
+      --bg: #ffffff;
+      --bg-warm: #fff1ec;
       --white: #ffffff;
       --radius: 20px;
       --radius-sm: 12px;
-      --shadow: 0 20px 60px rgba(232,98,26,0.15);
+      --shadow: 0 20px 60px rgba(221,21,5,0.16);
       --shadow-card: 0 8px 32px rgba(0,0,0,0.10);
       
       /* New Background Palette Variables */
-      --bg-cream: #fffbf5;
-      --bg-beige: #fbf0df;
-      --bg-ivory: #fffff2;
-      --bg-soft-orange: #ffe9d6;
-      --bg-light-brown: #eedcd0;
-      --accent-olive: #9fa896;
+      --bg-cream: #ffffff;
+      --bg-beige: #fff1ec;
+      --bg-ivory: #fffaf7;
+      --bg-soft-orange: #fff0e8;
+      --bg-light-brown: #ffd8ce;
+      --accent-olive: #2f8f5b;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 112px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) #ffe5df;
+    }
+
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: #ffe5df; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, var(--gold), var(--primary));
+      border: 3px solid #ffe5df;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
 
     body {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: var(--bg-cream);
       /* Elegant topographic wavy background lines representing the mountain landscape of Malino */
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg stroke='%23e8621a' stroke-opacity='0.022' stroke-width='1.5' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3Cpath d='M100 -40 C 120 20, 80 60, 160 100 C 240 140, 180 180, 220 240'/%3E%3Cpath d='M130 -40 C 150 20, 110 60, 190 100 C 270 140, 210 180, 250 240'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg stroke='%23dd1505' stroke-opacity='0.026' stroke-width='1.5' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3Cpath d='M100 -40 C 120 20, 80 60, 160 100 C 240 140, 180 180, 220 240'/%3E%3Cpath d='M130 -40 C 150 20, 110 60, 190 100 C 270 140, 210 180, 250 240'/%3E%3C/g%3E%3C/svg%3E");
       color: var(--text);
       overflow-x: hidden;
       position: relative;
     }
+
+    body.menu-open,
+    body.lightbox-open { overflow: hidden; }
 
     /* Fine Paper Grain Noise Overlay */
     body::before {
@@ -64,68 +83,115 @@
     /* ========== NAVBAR ========== */
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 16px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
       z-index: 1000;
-      padding: 0 5%;
+      width: min(1120px, calc(100% - 32px));
+      padding: 0.55rem 0.75rem 0.55rem 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 70px;
-      background: rgba(255,251,245,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(232,98,26,0.12);
-      transition: box-shadow 0.3s;
+      gap: 1rem;
+      height: 76px;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(221,21,5,0.14);
+      border-radius: 999px;
+      box-shadow: 0 14px 38px rgba(38,8,11,0.08);
+      transition: box-shadow 0.3s, background 0.3s, border-color 0.3s;
     }
-    nav.scrolled { box-shadow: 0 4px 24px rgba(232,98,26,0.12); }
+    nav.scrolled {
+      background: rgba(255,255,255,0.94);
+      border-color: rgba(221,21,5,0.2);
+      box-shadow: 0 18px 45px rgba(221,21,5,0.14);
+    }
     .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--primary);
+      width: 126px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
       text-decoration: none;
-      letter-spacing: -0.5px;
     }
-    .nav-logo span { color: var(--gold); }
+    .nav-logo img {
+      width: 128px;
+      height: 128px;
+      object-fit: contain;
+      transform: translateY(2px);
+      transform-origin: center;
+      display: block;
+    }
     .nav-links {
       display: flex;
-      gap: 2rem;
+      align-items: center;
+      gap: 0.4rem;
       list-style: none;
+      padding: 0.35rem;
+      background: rgba(255,241,236,0.72);
+      border: 1px solid rgba(221,21,5,0.08);
+      border-radius: 999px;
     }
     .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.65rem 0.95rem;
       text-decoration: none;
       color: var(--text);
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: color 0.2s;
+      font-weight: 800;
+      font-size: 0.9rem;
+      transition: color 0.2s, background 0.2s, transform 0.2s;
       position: relative;
+      border-radius: 999px;
     }
     .nav-links a::after {
       content: '';
       position: absolute;
-      bottom: -4px; left: 0;
-      width: 0; height: 2px;
+      bottom: 0.38rem;
+      left: 0.95rem;
+      right: 0.95rem;
+      height: 3px;
       background: var(--primary);
-      transition: width 0.3s;
+      border-radius: 999px;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.25s ease;
     }
-    .nav-links a:hover { color: var(--primary); }
-    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+      background: rgba(221,21,5,0.08);
+      transform: translateY(-1px);
+    }
+    .nav-links a:hover::after,
+    .nav-links a.active::after { transform: scaleX(1); }
     .nav-cta {
-      background: var(--primary);
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
       color: var(--white) !important;
-      padding: 0.5rem 1.2rem;
+      padding: 0.72rem 1.2rem;
       border-radius: 50px;
       font-weight: 600 !important;
+      box-shadow: 0 10px 24px rgba(221,21,5,0.24);
     }
     .nav-cta:hover { background: var(--primary-dark); color: var(--white) !important; }
-    .nav-cta::after { display: none !important; }
+    .nav-cta::after { background: rgba(255,255,255,0.86); bottom: 0.42rem; }
     .hamburger {
       display: none;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: 5px;
       cursor: pointer;
-      background: none;
-      border: none;
-      padding: 4px;
+      width: 44px;
+      height: 44px;
+      background: var(--white);
+      border: 1px solid rgba(221,21,5,0.16);
+      border-radius: 50%;
+      padding: 0;
+      box-shadow: 0 8px 18px rgba(221,21,5,0.1);
     }
     .hamburger span {
       display: block;
@@ -134,15 +200,63 @@
       border-radius: 2px;
       transition: all 0.3s;
     }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu-header,
+    .mobile-menu-footer {
+      display: none;
+    }
+    .mobile-menu-logo {
+      width: 136px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .mobile-menu-logo img {
+      width: 144px;
+      height: 144px;
+      object-fit: contain;
+      transform: translateY(2px);
+    }
+    .mobile-close {
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(221,21,5,0.18);
+      border-radius: 50%;
+      background: var(--white);
+      cursor: pointer;
+      position: relative;
+      box-shadow: 0 8px 18px rgba(221,21,5,0.12);
+      transition: transform 0.25s, background 0.25s;
+    }
+    .mobile-close:hover {
+      background: var(--gold);
+      transform: rotate(90deg);
+    }
+    .mobile-close span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 18px;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 999px;
+      transform-origin: center;
+    }
+    .mobile-close span:first-child { transform: translate(-50%, -50%) rotate(45deg); }
+    .mobile-close span:last-child { transform: translate(-50%, -50%) rotate(-45deg); }
 
     /* ========== HERO ========== */
     .hero {
       min-height: 100vh;
+      min-height: 100svh;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 3rem;
-      padding: 100px 8% 120px;
+      padding: clamp(124px, 14vh, 150px) 8% 78px;
       background: transparent;
       position: relative;
       overflow: hidden;
@@ -185,7 +299,7 @@
       position: absolute;
       top: -100px; right: -100px;
       width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(245,166,35,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(255,190,0,0.08) 0%, transparent 70%);
       border-radius: 50%;
       z-index: 2;
     }
@@ -194,34 +308,75 @@
       position: absolute;
       bottom: -100px; left: -80px;
       width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(232,98,26,0.05) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(221,21,5,0.07) 0%, transparent 70%);
       border-radius: 50%;
       z-index: 2;
     }
-    .hero-content { position: relative; z-index: 3; }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      align-self: center;
+      padding-top: 0.5rem;
+    }
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      gap: 0.65rem;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(255,255,255,0.95), transparent 24%),
+        linear-gradient(145deg, #fff6a7 0%, var(--gold) 48%, #ff9f1c 100%);
       color: var(--dark);
       font-size: 0.82rem;
-      font-weight: 700;
-      padding: 0.4rem 1rem;
+      font-weight: 900;
+      padding: 0.52rem 1.1rem 0.56rem;
       border-radius: 50px;
       margin-bottom: 1.5rem;
-      letter-spacing: 0.05em;
+      letter-spacing: 0;
       text-transform: uppercase;
-      box-shadow: 0 4px 16px rgba(245,166,35,0.3);
+      border: 2px solid rgba(255,255,255,0.88);
+      box-shadow:
+        0 7px 0 #d88400,
+        0 18px 32px rgba(147,64,0,0.22),
+        inset 0 2px 0 rgba(255,255,255,0.75),
+        inset 0 -4px 0 rgba(118,45,0,0.14);
+      text-shadow: 0 1px 0 rgba(255,255,255,0.42);
+      animation: happy-bounce 4s ease-in-out infinite;
+    }
+    .hero-badge::before {
+      content: '';
+      position: absolute;
+      inset: 5px auto auto 22%;
+      width: 44%;
+      height: 40%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.75), rgba(255,255,255,0));
+      transform: rotate(-10deg);
+      z-index: -1;
+    }
+    .hero-badge > * { position: relative; z-index: 1; }
+    .pill-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 34% 30%, #ff9a8d 0 20%, var(--primary) 45%, var(--primary-dark) 100%);
+      box-shadow:
+        0 0 0 5px rgba(221,21,5,0.13),
+        inset 0 1px 0 rgba(255,255,255,0.55);
+      display: inline-block;
+      flex: 0 0 auto;
     }
     .hero-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(2.5rem, 5vw, 4rem);
       font-weight: 800;
       line-height: 1.1;
       color: var(--dark);
       margin-bottom: 1.2rem;
     }
+    .mobile-break { display: none; }
     .hero-title .highlight {
       color: var(--primary);
       position: relative;
@@ -231,7 +386,7 @@
       position: absolute;
       bottom: 2px; left: 0; right: 0;
       height: 8px;
-      background: rgba(232,98,26,0.15);
+      background: rgba(221,21,5,0.15);
       z-index: -1;
       border-radius: 4px;
     }
@@ -258,10 +413,10 @@
       font-size: 1rem;
       font-weight: 700;
       text-decoration: none;
-      box-shadow: 0 8px 24px rgba(232,98,26,0.35);
+      box-shadow: 0 8px 24px rgba(221,21,5,0.35);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(232,98,26,0.45); }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(221,21,5,0.45); }
     .btn-secondary {
       display: inline-flex;
       align-items: center;
@@ -277,6 +432,34 @@
       transition: all 0.2s;
     }
     .btn-secondary:hover { background: var(--primary); color: var(--white); }
+    .ui-icon {
+      width: 1.1em;
+      height: 1.1em;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex: 0 0 auto;
+    }
+    .wa-icon {
+      width: 1.2em;
+      height: 1.2em;
+      fill: currentColor;
+      flex: 0 0 auto;
+      display: block;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
     .hero-stats {
       display: flex;
       gap: 2rem;
@@ -305,7 +488,7 @@
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       width: 120%; height: 120%;
-      background: radial-gradient(circle, rgba(232, 98, 26, 0.12) 0%, rgba(245, 166, 35, 0.04) 50%, transparent 70%);
+      background: radial-gradient(circle, rgba(221,21,5,0.13) 0%, rgba(255,207,50,0.08) 50%, transparent 70%);
       z-index: -1;
       filter: blur(40px);
       pointer-events: none;
@@ -317,9 +500,10 @@
     }
     .hero-img-wrap {
       position: relative;
-      border-radius: 30px;
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 30px 80px rgba(232,98,26,0.25);
+      box-shadow: 0 30px 80px rgba(221,21,5,0.25);
       animation: float 6s ease-in-out infinite;
     }
     .hero-img-wrap img {
@@ -342,7 +526,7 @@
       display: inline-block;
       font-size: 0.78rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0;
       text-transform: uppercase;
       color: var(--gold-light);
       background: rgba(255,255,255,0.1);
@@ -351,7 +535,7 @@
       margin-bottom: 0.8rem;
     }
     .video-gallery-section .vg-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(1.5rem, 3vw, 2.2rem);
       font-weight: 800;
       color: var(--white);
@@ -360,7 +544,8 @@
     .video-gallery-section .vg-title span { color: var(--gold-light); }
     .video-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 560px);
+      justify-content: center;
       gap: 1.5rem;
       align-items: start;
     }
@@ -374,9 +559,11 @@
       cursor: pointer;
     }
     .video-card-item:hover {
+      --wiggle-y: -6px;
       transform: translateY(-6px);
-      box-shadow: 0 20px 50px rgba(245,166,35,0.25);
-      border-color: rgba(245,166,35,0.35);
+      box-shadow: 0 20px 50px rgba(255,190,0,0.25);
+      border-color: rgba(255,190,0,0.35);
+      animation: happy-wiggle 0.72s ease both;
     }
     .video-wrapper {
       position: relative;
@@ -410,22 +597,82 @@
     }
     .hero-float-badge {
       position: absolute;
-      background: var(--white);
+      overflow: hidden;
+      isolation: isolate;
       border-radius: 16px;
       padding: 0.8rem 1.2rem;
-      box-shadow: var(--shadow-card);
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      font-weight: 700;
+      font-weight: 900;
       font-size: 0.9rem;
+      border: 2px solid rgba(255,255,255,0.9);
+      text-shadow: 0 1px 0 rgba(255,255,255,0.45);
     }
-    .hero-float-badge.top-left { top: 24px; left: -24px; }
-    .hero-float-badge.bottom-right { bottom: 30px; right: -24px; }
-    .badge-icon { font-size: 1.4rem; }
+    .hero-float-badge::after {
+      content: '';
+      position: absolute;
+      inset: 5px auto auto 12px;
+      width: 48%;
+      height: 34%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.7), rgba(255,255,255,0));
+      transform: rotate(-12deg);
+      z-index: -1;
+    }
+    .hero-float-badge.top-left {
+      top: 24px;
+      left: -24px;
+      color: #12391f;
+      background: linear-gradient(145deg, #f1fff6 0%, #a8edbd 52%, #37a765 100%);
+      box-shadow:
+        0 8px 0 #1f7044,
+        0 18px 34px rgba(16,95,51,0.28),
+        inset 0 2px 0 rgba(255,255,255,0.72),
+        inset 0 -4px 0 rgba(12,82,43,0.16);
+      transform: rotate(-2deg);
+    }
+    .hero-float-badge.bottom-right {
+      bottom: 30px;
+      right: -24px;
+      color: #4a190b;
+      background: linear-gradient(145deg, #fff8d8 0%, var(--gold) 52%, #ff7b47 100%);
+      box-shadow:
+        0 8px 0 #c65e17,
+        0 18px 34px rgba(154,57,14,0.26),
+        inset 0 2px 0 rgba(255,255,255,0.72),
+        inset 0 -4px 0 rgba(124,43,6,0.15);
+      transform: rotate(2deg);
+    }
+    .badge-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      color: currentColor;
+      background: rgba(255,255,255,0.66);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.72),
+        0 4px 10px rgba(0,0,0,0.12);
+    }
+    .badge-icon .ui-icon { width: 18px; height: 18px; }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-12px); }
+    }
+    @keyframes happy-wiggle {
+      0%, 100% { transform: translate(var(--wiggle-x, 0), var(--wiggle-y, -6px)) rotate(0deg); }
+      20% { transform: translate(var(--wiggle-x, 0), calc(var(--wiggle-y, -6px) - 1px)) rotate(-1.4deg); }
+      45% { transform: translate(var(--wiggle-x, 0), calc(var(--wiggle-y, -6px) - 2px)) rotate(1.2deg); }
+      70% { transform: translate(var(--wiggle-x, 0), calc(var(--wiggle-y, -6px) - 1px)) rotate(-0.8deg); }
+    }
+    @keyframes happy-bounce {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      45% { transform: translateY(-4px) rotate(-0.6deg); }
+      60% { transform: translateY(-2px) rotate(0.5deg); }
     }
 
     /* ========== SECTION COMMON ========== */
@@ -434,16 +681,16 @@
       display: inline-block;
       font-size: 0.8rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0;
       text-transform: uppercase;
       color: var(--primary);
-      background: rgba(232,98,26,0.08);
+      background: rgba(221,21,5,0.08);
       padding: 0.3rem 1rem;
       border-radius: 50px;
       margin-bottom: 1rem;
     }
     .section-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(1.8rem, 3.5vw, 2.8rem);
       font-weight: 800;
       color: var(--dark);
@@ -460,9 +707,98 @@
     .text-center { text-align: center; }
     .text-center .section-desc { margin: 0 auto; }
 
+    /* ========== PARTNERS ========== */
+    .partners {
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      padding-top: 86px;
+      padding-bottom: 92px;
+    }
+    .partners-grid {
+      max-width: 920px;
+      margin: 3rem auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+      align-items: center;
+    }
+    .partner-card {
+      min-height: 142px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.4rem;
+      background: var(--white);
+      border: 1px solid rgba(221,21,5,0.12);
+      border-radius: var(--radius-sm);
+      box-shadow: 0 12px 30px rgba(221,21,5,0.08);
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .partner-card:hover {
+      --wiggle-y: -5px;
+      transform: translateY(-5px);
+      border-color: rgba(255,190,0,0.55);
+      box-shadow: 0 18px 38px rgba(221,21,5,0.14);
+      animation: happy-wiggle 0.72s ease both;
+    }
+    .partner-logo {
+      width: 220px;
+      height: 78px;
+      max-width: 100%;
+      object-fit: contain;
+      transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease;
+    }
+    .partner-logo.logo-rumah-bumn { height: 86px; }
+    .partner-logo.logo-bri { height: 66px; }
+    .partner-link {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .dekatlokal-card {
+      --dekatlokal-logo-w: 220px;
+      --dekatlokal-logo-h: 78px;
+    }
+    .dekatlokal-card::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(var(--dekatlokal-logo-w), calc(100% - 2.8rem));
+      height: var(--dekatlokal-logo-h);
+      background: var(--dekatlokal-blue);
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.98);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      -webkit-mask: url("foto/logo-dekatlokal.png") center / contain no-repeat;
+      mask: url("foto/logo-dekatlokal.png") center / contain no-repeat;
+    }
+    .dekatlokal-card:hover,
+    .dekatlokal-card:focus-visible {
+      border-color: rgba(2,85,245,0.38);
+      box-shadow: 0 18px 42px rgba(2,85,245,0.16);
+    }
+    .dekatlokal-card:hover .logo-dekatlokal,
+    .dekatlokal-card:focus-visible .logo-dekatlokal {
+      opacity: 0;
+      transform: scale(1.04);
+    }
+    .dekatlokal-card:hover::after,
+    .dekatlokal-card:focus-visible::after {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.04);
+    }
+    .dekatlokal-card:focus-visible {
+      outline: 3px solid rgba(2,85,245,0.28);
+      outline-offset: 4px;
+    }
+
     /* ========== ABOUT ========== */
     .about {
-      background: linear-gradient(180deg, rgba(255,251,245,0.75) 0%, rgba(251,240,223,0.75) 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,241,236,0.9) 100%);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
@@ -502,14 +838,30 @@
       border-left: 4px solid var(--primary);
       transition: transform 0.2s;
     }
-    .about-feat:hover { transform: translateX(6px); }
-    .feat-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .about-feat:hover {
+      --wiggle-x: 6px;
+      --wiggle-y: 0px;
+      transform: translateX(6px);
+      animation: happy-wiggle 0.72s ease both;
+    }
+    .feat-icon {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: rgba(255,190,0,0.25);
+      flex-shrink: 0;
+    }
+    .feat-icon .ui-icon { width: 22px; height: 22px; }
     .feat-title { font-weight: 700; color: var(--dark); margin-bottom: 0.2rem; }
     .feat-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
 
     /* ========== PRODUCTS ========== */
     .products { 
-      background: linear-gradient(180deg, rgba(255,255,242,0.75) 0%, rgba(251,240,223,0.75) 100%);
+      background: linear-gradient(180deg, rgba(255,250,247,0.9) 0%, rgba(255,241,236,0.9) 100%);
       position: relative;
       overflow: hidden;
     }
@@ -524,25 +876,30 @@
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow-card);
-      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(221,21,5,0.08);
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       height: 100%;
     }
     .product-card:hover {
+      --wiggle-y: -8px;
       transform: translateY(-8px);
-      box-shadow: 0 20px 50px rgba(232,98,26,0.18);
+      border-color: rgba(221,21,5,0.24);
+      box-shadow: 0 20px 50px rgba(221,21,5,0.18);
+      animation: happy-wiggle 0.72s ease both;
     }
     .product-img {
       width: 100%;
-      height: 240px;
+      aspect-ratio: 1 / 1;
+      height: auto;
       object-fit: cover;
       display: block;
       transition: transform 0.4s;
     }
     .product-card:hover .product-img { transform: scale(1.04); }
-    .product-img-wrap { overflow: hidden; }
+    .product-img-wrap { overflow: hidden; background: #fff7f3; }
     .product-body { 
       padding: 1.2rem 1.4rem; 
       display: flex;
@@ -550,16 +907,21 @@
       flex-grow: 1;
     }
     .product-tag {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      width: fit-content;
+      max-width: max-content;
       font-size: 0.72rem;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0;
       color: var(--primary);
-      background: rgba(232,98,26,0.08);
-      padding: 0.2rem 0.7rem;
+      background: transparent;
+      padding: 0.1rem 0;
       border-radius: 50px;
       margin-bottom: 0.5rem;
+      line-height: 1.2;
     }
     .product-name {
       font-size: 1.15rem;
@@ -592,21 +954,35 @@
     .btn-order {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      background: var(--primary);
+      justify-content: center;
+      gap: 0;
+      background: var(--whatsapp);
       color: var(--white);
-      padding: 0.5rem 1.1rem;
-      border-radius: 50px;
-      font-size: 0.88rem;
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 1.15rem;
       font-weight: 600;
       text-decoration: none;
-      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 10px 24px rgba(37,211,102,0.32);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      flex: 0 0 46px;
     }
-    .btn-order:hover { background: var(--primary-dark); transform: scale(1.04); }
+    .btn-order:hover {
+      background: #18b957;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 14px 28px rgba(37,211,102,0.42);
+    }
+    .btn-order .wa-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .btn-order-label { display: none; }
 
     /* ========== PROSES ========== */
     .proses {
-      background: linear-gradient(180deg, rgba(255,251,245,0.75) 0%, rgba(251,240,223,0.75) 50%, rgba(255,251,245,0.75) 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,241,236,0.9) 50%, rgba(255,255,255,0.9) 100%);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
@@ -646,7 +1022,7 @@
       font-weight: 800;
       font-size: 1rem;
       flex-shrink: 0;
-      box-shadow: 0 4px 12px rgba(232,98,26,0.3);
+      box-shadow: 0 4px 12px rgba(221,21,5,0.3);
     }
     .step-title { font-weight: 700; color: var(--dark); margin-bottom: 0.2rem; }
     .step-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
@@ -654,7 +1030,7 @@
     /* ========== GALLERY ========== */
     .gallery { 
       background-color: var(--dark); 
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%23f5a623' stroke-opacity='0.025' stroke-width='1.2' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%23ffbe00' stroke-opacity='0.025' stroke-width='1.2' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3C/g%3E%3C/svg%3E");
       padding: 100px 8% 80px; 
       position: relative; 
       overflow: hidden; 
@@ -663,8 +1039,7 @@
     .gallery .section-label { background: rgba(255,255,255,0.1); color: var(--gold-light); }
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
       margin-top: 3rem;
     }
@@ -673,65 +1048,211 @@
       overflow: hidden;
       position: relative;
       cursor: pointer;
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      min-width: 0;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.06);
+      box-shadow: 0 18px 42px rgba(0,0,0,0.18);
+      padding: 0;
+      font: inherit;
+      color: inherit;
+      appearance: none;
+      transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
     }
-    .gallery-item.wide { grid-column: span 2; }
+    .gallery-item.wide { grid-column: span 2; aspect-ratio: 2 / 1; }
     .gallery-item img {
       width: 100%;
-      height: 220px;
+      height: 100%;
       object-fit: cover;
       display: block;
       transition: transform 0.5s;
     }
-    .gallery-item.wide img { height: 280px; }
+    .gallery-item:hover {
+      --wiggle-y: -6px;
+      transform: translateY(-6px);
+      border-color: rgba(255,207,50,0.42);
+      box-shadow: 0 24px 54px rgba(0,0,0,0.26);
+      animation: happy-wiggle 0.72s ease both;
+    }
     .gallery-item:hover img { transform: scale(1.08); }
     .gallery-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.6) 100%);
+      background:
+        radial-gradient(circle at 50% 50%, rgba(255,207,50,0.18), transparent 42%),
+        linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.62) 100%);
       opacity: 0;
       transition: opacity 0.3s;
     }
     .gallery-item:hover .gallery-overlay { opacity: 1; }
 
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: grid;
+      place-items: center;
+      padding: clamp(1rem, 3vw, 2.5rem);
+      background: rgba(18,5,6,0.78);
+      backdrop-filter: blur(12px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.22s ease, visibility 0.22s ease;
+    }
+    .lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .lightbox-dialog {
+      position: relative;
+      width: min(100%, 1040px);
+      display: grid;
+      justify-items: center;
+      gap: 0.75rem;
+      transform: scale(0.96) translateY(12px);
+      transition: transform 0.22s ease;
+    }
+    .lightbox.open .lightbox-dialog { transform: scale(1) translateY(0); }
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 18px;
+      background: var(--white);
+      box-shadow: 0 30px 90px rgba(0,0,0,0.42);
+    }
+    .lightbox-caption {
+      color: var(--white);
+      font-weight: 800;
+      text-align: center;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: -18px;
+      right: -18px;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 2rem;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 12px 32px rgba(221,21,5,0.35);
+      transition: transform 0.2s, background 0.2s;
+    }
+    .lightbox-close:hover {
+      background: var(--primary-dark);
+      transform: rotate(8deg) scale(1.05);
+    }
+
     /* ========== KEUNGGULAN ========== */
     .keunggulan { 
-      background-image: 
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%23ffffff' stroke-opacity='0.035' stroke-width='1.2' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3C/g%3E%3C/svg%3E"),
-        linear-gradient(135deg, var(--primary), var(--primary-dark));
+      background-color: var(--primary-dark);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 680' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='2.4'%3E%3Cpath d='M-80 170 C 190 70 350 270 610 180 C 880 86 1050 200 1520 80'/%3E%3Cpath d='M-100 320 C 180 200 390 430 690 300 C 960 185 1140 365 1540 235'/%3E%3Cpath d='M-120 520 C 190 390 420 595 710 470 C 1020 335 1210 545 1560 410'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='0.055'%3E%3Cpath d='M0 0 H1440 V120 C1140 215 860 95 605 185 C360 272 190 118 0 210 Z'/%3E%3Cpath d='M0 680 V560 C300 480 520 625 790 520 C1040 424 1210 550 1440 470 V680 Z'/%3E%3C/g%3E%3C/svg%3E"),
+        linear-gradient(135deg, #e42010 0%, var(--primary) 45%, var(--primary-dark) 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       position: relative; 
       overflow: hidden; 
     }
     .keunggulan .section-title { color: var(--white); }
     .keunggulan .section-label { background: rgba(255,255,255,0.15); color: var(--white); }
     .keunggulan-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      max-width: 1120px;
+      margin: 3rem auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1.5rem;
-      margin-top: 3rem;
     }
     .keunggulan-card {
-      flex: 1 1 320px;
-      max-width: 360px;
-      background: rgba(255,255,255,0.12);
+      --card-accent: var(--gold);
+      min-height: 216px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.85rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.20), rgba(255,255,255,0.10));
       backdrop-filter: blur(10px);
       border-radius: var(--radius-sm);
-      padding: 2.2rem 1.8rem;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.2);
-      transition: background 0.3s, transform 0.3s;
+      padding: 1.45rem;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,0.24);
+      box-shadow: 0 18px 44px rgba(57,5,8,0.16);
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s, transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .keunggulan-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--card-accent), rgba(255,255,255,0.25));
+    }
+    .keunggulan-card:nth-child(2) { --card-accent: #94f0b5; }
+    .keunggulan-card:nth-child(3) { --card-accent: #9ed8ff; }
+    .keunggulan-card:nth-child(4) { --card-accent: #ffd0a3; }
+    .keunggulan-card:nth-child(5) { --card-accent: #fff06f; }
+    .keunggulan-card:nth-child(6) { --card-accent: #bdf3d6; }
+    .keunggulan-card::after {
+      content: '';
+      position: absolute;
+      right: -32px;
+      bottom: -44px;
+      width: 128px;
+      height: 128px;
+      border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 32px;
+      transform: rotate(16deg);
+      z-index: 0;
     }
     .keunggulan-card:hover {
-      background: rgba(255,255,255,0.2);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.27), rgba(255,255,255,0.14));
       transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.38);
+      box-shadow: 0 24px 56px rgba(57,5,8,0.24);
     }
-    .k-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-    .k-title { font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
-    .k-desc { font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.6; }
+    .k-icon {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dark);
+      background: var(--card-accent);
+      border-radius: 14px;
+      box-shadow:
+        0 7px 0 rgba(38,8,11,0.22),
+        inset 0 2px 0 rgba(255,255,255,0.55);
+      position: relative;
+      z-index: 1;
+    }
+    .k-icon .ui-icon {
+      width: 24px;
+      height: 24px;
+      stroke-width: 2.3;
+    }
+    .k-title { font-size: 1.05rem; font-weight: 800; color: var(--white); margin-bottom: -0.25rem; position: relative; z-index: 1; }
+    .k-desc { font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.6; position: relative; z-index: 1; }
+    .keunggulan .section-divider { bottom: -2px; }
+    .keunggulan .section-divider svg { height: clamp(42px, 5vw, 62px); }
 
     /* ========== CONTACT ========== */
     .contact {
-      background: linear-gradient(180deg, rgba(255,255,242,0.75) 0%, rgba(251,240,223,0.75) 100%);
+      background: linear-gradient(180deg, rgba(255,250,247,0.9) 0%, rgba(255,241,236,0.9) 100%);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
@@ -758,23 +1279,117 @@
       color: var(--text);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .contact-item:hover { transform: translateX(6px); box-shadow: 0 6px 24px rgba(232,98,26,0.15); }
-    .contact-icon { font-size: 1.5rem; width: 44px; text-align: center; }
+    .contact-item:hover {
+      --wiggle-x: 6px;
+      --wiggle-y: 0px;
+      transform: translateX(6px);
+      box-shadow: 0 6px 24px rgba(221,21,5,0.15);
+      animation: happy-wiggle 0.72s ease both;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: rgba(255,190,0,0.22);
+      flex: 0 0 auto;
+    }
+    .contact-icon .ui-icon { width: 21px; height: 21px; }
     .contact-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
     .contact-value { font-weight: 700; color: var(--dark); }
 
     /* ========== FOOTER ========== */
     footer {
-      background: linear-gradient(180deg, #1a0a00 0%, #0d0500 100%);
+      background: linear-gradient(180deg, var(--dark) 0%, #120506 100%);
       color: rgba(255,255,255,0.7);
-      text-align: center;
-      padding: 3rem 8% 2rem;
+      padding: 4rem 8% 1.5rem;
       font-size: 0.9rem;
       position: relative;
       overflow: hidden;
     }
     footer strong { color: var(--gold-light); }
     footer a { color: var(--primary-light); text-decoration: none; }
+    .footer-content {
+      max-width: 1120px;
+      margin: 0 auto 2rem;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 3rem;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+    }
+    .footer-logo {
+      width: 128px;
+      height: 78px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .footer-logo img {
+      width: 132px;
+      height: 132px;
+      object-fit: contain;
+      transform: translateY(0);
+      display: block;
+    }
+    .footer-desc {
+      max-width: 320px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.72);
+    }
+    .footer-title {
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .footer-menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+    .footer-menu a {
+      color: rgba(255,255,255,0.72);
+      transition: color 0.2s;
+    }
+    .footer-menu a:hover { color: var(--gold); }
+    .footer-partner-logos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+    .footer-partner-logo {
+      width: 170px;
+      height: 44px;
+      object-fit: contain;
+      object-position: left center;
+      filter: brightness(0) invert(1);
+      opacity: 0.92;
+    }
+    .footer-partner-logo.logo-rumah-bumn-footer {
+      height: 66px;
+    }
+    .footer-bottom {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(255,255,255,0.14);
+      text-align: center;
+      color: rgba(255,255,255,0.72);
+      position: relative;
+      z-index: 1;
+    }
+    .footer-bottom a {
+      color: var(--gold);
+      font-weight: 800;
+    }
     .footer-wave {
       position: absolute;
       top: 0; left: 0; width: 100%;
@@ -818,23 +1433,175 @@
 
     /* ========== RESPONSIVE ========== */
     @media (max-width: 900px) {
-      .nav-links { display: none; }
-      .nav-links.open {
+      nav {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        width: auto;
+        transform: none;
+        height: 68px;
+        padding: 0 0.8rem;
+      }
+      .nav-logo { width: 112px; height: 56px; }
+      .nav-logo { order: 1; flex: 0 0 auto; }
+      .nav-logo img { width: 120px; height: 120px; transform: translateY(2px); }
+      .nav-links {
+        order: 3;
+        flex: 0 0 auto;
+        position: fixed;
+        inset: 0;
+        z-index: 1100;
         display: flex;
         flex-direction: column;
-        position: fixed;
-        top: 70px; left: 0; right: 0;
-        background: var(--bg);
-        padding: 1.5rem 5%;
-        border-bottom: 1px solid rgba(232,98,26,0.1);
-        gap: 1rem;
-        z-index: 999;
+        align-items: stretch;
+        gap: 0.62rem;
+        width: 100%;
+        height: 100dvh;
+        min-height: 0;
+        padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+        border: 0;
+        border-radius: 0;
+        background:
+          radial-gradient(circle at 18% 0%, rgba(255,207,50,0.22), transparent 30%),
+          linear-gradient(180deg, rgba(255,255,255,0.99), rgba(255,241,236,0.99));
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+        box-shadow: none;
+        overflow-y: auto;
       }
-      .hamburger { display: flex; }
-      .hero { grid-template-columns: 1fr; padding: 100px 6% 60px; text-align: center; }
-      .hero-image { display: none; }
+      .nav-links.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+      }
+      .mobile-menu-footer {
+        display: block;
+        margin-top: auto;
+        padding-top: 0.65rem;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      .mobile-menu-footer a {
+        display: inline;
+        padding: 0;
+        color: var(--primary);
+        font-weight: 800;
+        border: 0;
+        background: transparent;
+        min-height: auto;
+      }
+      .nav-links li:not(.mobile-menu-header):not(.mobile-menu-footer) {
+        width: 100%;
+      }
+      .nav-links a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 52px;
+        padding: 0.86rem 1rem;
+        font-size: 1.05rem;
+        border-radius: 16px;
+        border: 1px solid rgba(221,21,5,0.10);
+        background: rgba(255,255,255,0.7);
+      }
+      .nav-links a::after { display: none; }
+      .nav-links .nav-cta {
+        justify-content: center;
+        margin-top: 0.25rem;
+        min-height: 58px;
+        padding: 1rem 1.2rem;
+        border: 0;
+        color: var(--white) !important;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        box-shadow: 0 16px 34px rgba(221,21,5,0.28);
+      }
+      .mobile-menu-header .mobile-menu-logo {
+        width: 136px;
+        height: 68px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        min-height: auto;
+      }
+      .mobile-menu-footer a {
+        display: inline;
+        width: auto;
+        padding: 0;
+        color: var(--primary);
+        font-weight: 800;
+        border: 0;
+        background: transparent;
+        min-height: auto;
+      }
+      .hamburger { display: flex !important; }
+      .hamburger {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        z-index: 1201;
+        transform: translateY(-50%);
+        flex: 0 0 44px;
+        order: 2;
+        margin-left: auto;
+        background: var(--gold);
+      }
+      .hamburger.open {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%) scale(0.86);
+      }
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: 100svh;
+        padding: 126px 6% 72px;
+        text-align: center;
+      }
+      .hero-image {
+        display: block;
+        width: min(100%, 480px);
+        margin: 1rem auto 0;
+      }
+      .hero-img-wrap img {
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
+      .hero-float-badge {
+        padding: 0.65rem 0.85rem;
+        font-size: 0.78rem;
+      }
+      .hero-float-badge.top-left { left: 10px; }
+      .hero-float-badge.bottom-right { right: 10px; }
       .hero-actions { justify-content: center; }
       .hero-stats { justify-content: center; }
+      .product-footer { align-items: stretch; }
+      .btn-order {
+        width: auto;
+        min-width: 132px;
+        height: 46px;
+        padding: 0 1rem;
+        border-radius: 999px;
+        gap: 0.45rem;
+        flex: 0 0 auto;
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+      .btn-order .wa-icon {
+        width: 21px;
+        height: 21px;
+      }
+      .btn-order-label { display: inline; }
       .about { grid-template-columns: 1fr; gap: 2rem; }
       .about-img-grid { display: none; }
       .proses { grid-template-columns: 1fr; gap: 2rem; }
@@ -842,13 +1609,50 @@
       .contact-img { display: none; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
       .gallery-item.wide { grid-column: span 2; }
+      .partners-grid { grid-template-columns: 1fr; max-width: 520px; }
+      .partner-card { min-height: 132px; }
+      .keunggulan-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-content { grid-template-columns: 1fr; gap: 2rem; }
       section { padding: 60px 6%; }
     }
 
     @media (max-width: 600px) {
       .products-grid { grid-template-columns: 1fr; }
-      .keunggulan-grid { grid-template-columns: 1fr 1fr; }
+      .keunggulan-grid { display: grid; grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .hero { overflow: hidden; padding-top: 122px; }
+      .hero-content {
+        width: min(100%, 340px);
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .hero-badge { font-size: 0.75rem; }
+      .hero-title { font-size: 2.2rem; }
+      .mobile-break { display: block; }
+      .hero-desc { font-size: 0.96rem; max-width: 100%; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions a {
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .hero-stats { gap: 1rem; }
+      .stat-num { font-size: 1.45rem; }
+      .product-footer {
+        gap: 0.85rem;
+      }
+      .btn-order {
+        min-width: 138px;
+      }
+      .hamburger {
+        position: absolute;
+        top: 50%;
+        left: auto;
+        right: 12px;
+      }
+      .lightbox-close { top: 8px; right: 8px; }
+      .lightbox-img { max-height: 72vh; border-radius: 12px; }
     }
 
     /* ========== DECORATIVE ORNAMENTS & BG EFFECTS ========== */
@@ -921,33 +1725,96 @@
       line-height: 0;
       z-index: 2;
       pointer-events: none;
+      overflow: hidden;
     }
     .divider-bottom {
-      bottom: 0;
+      bottom: -2px;
     }
     .divider-top {
-      top: 0;
+      top: -2px;
     }
     .section-divider svg {
       display: block;
       width: 100%;
-      height: 60px;
+      height: 64px;
+      transform: translateY(1px);
     }
+    .section-divider path { stroke: none; }
   </style>
 </head>
 <body>
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden;">
+    <symbol id="icon-cart" viewBox="0 0 24 24">
+      <circle cx="8" cy="20" r="1.4"></circle>
+      <circle cx="18" cy="20" r="1.4"></circle>
+      <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 1.9-1.4L20 8H6"></path>
+    </symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4.5"></circle>
+      <path d="M8.8 12.2 7 21l5-3 5 3-1.8-8.8"></path>
+    </symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24">
+      <path d="M4 8.5 12 4l8 4.5v9L12 22l-8-4.5z"></path>
+      <path d="M4 8.5 12 13l8-4.5"></path>
+      <path d="M12 13v9"></path>
+    </symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24">
+      <path d="M20 4c-7.8.3-13 4-14 10.6C5.4 18.3 8 21 11.5 20.4 18.2 19.3 20.2 11.7 20 4z"></path>
+      <path d="M6.5 17.5c2.8-4.2 6.2-6.8 10.2-8"></path>
+    </symbol>
+    <symbol id="icon-shield-check" viewBox="0 0 24 24">
+      <path d="M12 3 19 6v5.5c0 4.5-2.8 7.8-7 9.5-4.2-1.7-7-5-7-9.5V6z"></path>
+      <path d="m8.5 12.2 2.2 2.2 4.8-5"></path>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M12 20s-7-4.2-8.6-8.7C2.3 8.1 4.4 5 7.6 5c1.8 0 3.4 1 4.4 2.5C13 6 14.6 5 16.4 5c3.2 0 5.3 3.1 4.2 6.3C19 15.8 12 20 12 20z"></path>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M6.7 4.5 9 4l2 4-1.4 1.2c.9 1.8 2.4 3.3 4.2 4.2L15 12l4 2-.5 2.3c-.2 1-1.1 1.7-2.1 1.7C10.6 18 6 13.4 6 7.6c0-1 .7-1.9 1.7-2.1z"></path>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.473 2.027 7.774L0 32l8.468-2.004A15.934 15.934 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.264 13.264 0 01-6.76-1.848l-.485-.288-5.025 1.188 1.262-4.9-.318-.503A13.267 13.267 0 012.667 16C2.667 8.637 8.637 2.667 16 2.667S29.333 8.637 29.333 16 23.363 29.333 16 29.333zm7.274-9.842c-.398-.2-2.357-1.163-2.72-1.295-.364-.134-.63-.2-.895.2-.266.397-1.03 1.295-1.263 1.561-.232.266-.464.3-.862.1-.398-.2-1.681-.62-3.204-1.98-1.184-1.057-1.984-2.363-2.217-2.76-.232-.398-.025-.612.175-.81.18-.178.397-.464.596-.697.2-.232.266-.397.398-.663.133-.266.066-.497-.033-.696-.1-.2-.895-2.157-1.228-2.953-.323-.774-.652-.668-.895-.68a16.22 16.22 0 00-.763-.015c-.265 0-.696.1-1.061.497-.364.398-1.393 1.362-1.393 3.32s1.427 3.851 1.626 4.117c.2.265 2.808 4.285 6.803 6.011.95.41 1.692.655 2.27.838.953.303 1.82.26 2.505.158.764-.114 2.357-.964 2.69-1.895.332-.93.332-1.728.232-1.895-.1-.168-.365-.265-.763-.465z"></path>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="5" y="5" width="14" height="14" rx="4"></rect>
+      <circle cx="12" cy="12" r="3.2"></circle>
+      <path d="M16.5 7.6h.1"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="4" y="6" width="16" height="12" rx="2"></rect>
+      <path d="m5 8 7 5 7-5"></path>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24">
+      <path d="M12 21s7-5.3 7-11a7 7 0 0 0-14 0c0 5.7 7 11 7 11z"></path>
+      <circle cx="12" cy="10" r="2.3"></circle>
+    </symbol>
+  </svg>
+
 
   <!-- NAVBAR -->
   <nav id="navbar">
-    <a href="#" class="nav-logo">Bakpia <span>Malino</span></a>
+    <a href="#home" class="nav-logo" aria-label="Bakpia Malino">
+      <img src="foto/logo-bakpia malino.png" alt="Bakpia Malino" />
+    </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#tentang">Tentang</a></li>
+      <li class="mobile-menu-header">
+        <a href="#home" class="mobile-menu-logo" aria-label="Bakpia Malino">
+          <img src="foto/logo-bakpia malino.png" alt="Bakpia Malino" />
+        </a>
+        <button class="mobile-close" id="mobile-close" type="button" aria-label="Tutup menu">
+          <span></span>
+          <span></span>
+        </button>
+      </li>
+      <li><a href="#mitra">Mitra Kami</a></li>
+      <li><a href="#tentang">Tentang Kami</a></li>
       <li><a href="#produk">Produk</a></li>
       <li><a href="#proses">Proses</a></li>
       <li><a href="#galeri">Galeri</a></li>
-      <li><a href="#kontak" class="nav-cta">Pesan Sekarang</a></li>
+      <li><a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20ingin%20pesan%20Bakpia%20Malino" class="nav-cta" target="_blank" rel="noopener">Pesan Sekarang</a></li>
+      <li class="mobile-menu-footer">Powered by <a href="https://dekatlokal.com" target="_blank" rel="noopener">DekatLokal</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <button class="hamburger" id="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -955,25 +1822,26 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <!-- Background Video -->
-    <video class="hero-bg-video" autoplay loop muted playsinline poster="foto/WhatsApp Image 2026-06-24 at 14.48.30 (1).jpeg">
+    <video class="hero-bg-video" autoplay loop muted playsinline poster="foto/gambar-hero.png">
       <source src="video/WhatsApp Video 2026-06-24 at 20.55.33 (1).mp4" type="video/mp4" />
     </video>
     <!-- Warm overlay to keep content readable -->
     <div class="hero-video-overlay"></div>
     <div class="hero-content">
-      <div class="hero-badge">🌟 Oleh-Oleh Khas Malino</div>
+      <div class="hero-badge"><span class="pill-dot"></span> Oleh-Oleh Khas Malino</div>
       <h1 class="hero-title">
-        Cita Rasa <span class="highlight">Alam Malino</span><br/>dalam Setiap Gigitan
+        Cita Rasa <span class="highlight">Alam<br class="mobile-break" /> Malino</span><br/>dalam Setiap<br class="mobile-break" /> Gigitan
       </h1>
       <p class="hero-desc">
         Bakpia Malino hadir dengan pilihan rasa unik dari bahan-bahan segar khas Sulawesi Selatan.
-        Diolah dengan penuh cinta, bersertifikat Halal & 100% Indonesia.
+        Diolah dengan penuh cinta, bersertifikat Halal dan 100% Indonesia.
       </p>
       <div class="hero-actions">
-        <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20ingin%20pesan%20Bakpia%20Malino" class="btn-primary" id="hero-order-btn">
-          🛒 Pesan Sekarang
+        <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20ingin%20pesan%20Bakpia%20Malino" class="btn-primary" id="hero-order-btn" target="_blank" rel="noopener">
+          <svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Pesan Sekarang
         </a>
-        <a href="#produk" class="btn-secondary">Lihat Produk →</a>
+        <a href="#produk" class="btn-secondary">Lihat Produk</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -992,14 +1860,14 @@
     </div>
     <div class="hero-image">
       <div class="hero-img-wrap">
-        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.30 (1).jpeg" alt="Bakpia Malino produk" />
+        <img src="foto/gambar-hero.png" alt="Bakpia Malino semua varian" />
       </div>
       <div class="hero-float-badge top-left">
-        <span class="badge-icon">🏆</span>
+        <span class="badge-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-award"></use></svg></span>
         <span>Sertifikat Halal</span>
       </div>
       <div class="hero-float-badge bottom-right">
-        <span class="badge-icon">📦</span>
+        <span class="badge-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-package"></use></svg></span>
         <span>Siap Kirim</span>
       </div>
     </div>
@@ -1011,6 +1879,28 @@
     </div>
   </section>
 
+  <!-- MITRA -->
+  <section class="partners" id="mitra">
+    <div class="text-center reveal">
+      <div class="section-label">Mitra Kami</div>
+      <h2 class="section-title">Didukung Oleh <span class="accent">Mitra Terpercaya</span></h2>
+      <p class="section-desc">
+        Bakpia Malino berkolaborasi dengan program pendampingan digital bersama DekatLokal dan Rumah BUMN Makassar untuk memperluas jangkauan pemasaran dan meningkatkan kualitas layanan.
+      </p>
+    </div>
+    <div class="partners-grid reveal">
+      <a class="partner-card partner-link dekatlokal-card" href="https://dekatlokal.com" target="_blank" rel="noopener" aria-label="Kunjungi website DekatLokal">
+        <img class="partner-logo logo-dekatlokal" src="foto/logo-dekatlokal.png" alt="DekatLokal" />
+      </a>
+      <div class="partner-card">
+        <img class="partner-logo logo-rumah-bumn" src="foto/logo-rumah bumn makassar.png" alt="Rumah BUMN Makassar" />
+      </div>
+      <div class="partner-card">
+        <img class="partner-logo logo-bri" src="foto/logo-bank bri.png" alt="Bank BRI" />
+      </div>
+    </div>
+  </section>
+
   <!-- TENTANG -->
   <section class="about" id="tentang">
     <div class="about-img-grid reveal">
@@ -1018,10 +1908,10 @@
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31 (1).jpeg" alt="Tentang Bakpia Malino" />
       </div>
       <div class="about-img-item">
-        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (1).jpeg" alt="Bakpia Coklat" />
+        <img src="foto/bakpia-coklat.png" alt="Bakpia Coklat" />
       </div>
       <div class="about-img-item">
-        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (2).jpeg" alt="Bakpia Ubi Ungu" />
+        <img src="foto/bakpia-ubi-ungu.png" alt="Bakpia Ubi Ungu" />
       </div>
     </div>
     <div class="reveal">
@@ -1034,21 +1924,21 @@
       </p>
       <div class="about-features">
         <div class="about-feat">
-          <div class="feat-icon">🌿</div>
+          <div class="feat-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-leaf"></use></svg></div>
           <div>
             <div class="feat-title">Bahan Baku Segar</div>
             <div class="feat-text">Menggunakan buah markisa matang segar langsung dari pohonnya, kaya vitamin C alami.</div>
           </div>
         </div>
         <div class="about-feat">
-          <div class="feat-icon">✅</div>
+          <div class="feat-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg></div>
           <div>
             <div class="feat-title">Bersertifikat Halal</div>
             <div class="feat-text">Seluruh produk telah mendapatkan sertifikasi Halal dan P-IRT dari Dinas Kesehatan.</div>
           </div>
         </div>
         <div class="about-feat">
-          <div class="feat-icon">🇮🇩</div>
+          <div class="feat-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-heart"></use></svg></div>
           <div>
             <div class="feat-title">Produk Lokal Bangga</div>
             <div class="feat-text">100% produk asli Indonesia, mendukung UMKM lokal Sulawesi Selatan.</div>
@@ -1093,7 +1983,7 @@
     <div class="products-grid">
       <div class="product-card reveal">
         <div class="product-img-wrap">
-          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.13.jpeg" alt="Bakpia Markisa" />
+          <img class="product-img" src="foto/bakpia-markisa.png" alt="Bakpia Markisa" />
         </div>
         <div class="product-body">
           <div class="product-tag">Best Seller</div>
@@ -1104,14 +1994,14 @@
               <span class="product-price">Rp 25.000</span>
               <span class="product-unit">/ kotak (8 pcs)</span>
             </div>
-            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Markisa" class="btn-order" id="order-markisa">🛒 Pesan</a>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Markisa" class="btn-order" id="order-markisa" target="_blank" rel="noopener" aria-label="Pesan Bakpia Markisa via WhatsApp"><svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span class="btn-order-label">Pesan</span><span class="sr-only">Bakpia Markisa</span></a>
           </div>
         </div>
       </div>
 
       <div class="product-card reveal">
         <div class="product-img-wrap">
-          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (1).jpeg" alt="Bakpia Coklat" />
+          <img class="product-img" src="foto/bakpia-coklat.png" alt="Bakpia Coklat" />
         </div>
         <div class="product-body">
           <div class="product-tag">Favorit</div>
@@ -1122,14 +2012,14 @@
               <span class="product-price">Rp 25.000</span>
               <span class="product-unit">/ kotak (8 pcs)</span>
             </div>
-            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Coklat" class="btn-order" id="order-coklat">🛒 Pesan</a>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Coklat" class="btn-order" id="order-coklat" target="_blank" rel="noopener" aria-label="Pesan Bakpia Coklat via WhatsApp"><svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span class="btn-order-label">Pesan</span><span class="sr-only">Bakpia Coklat</span></a>
           </div>
         </div>
       </div>
 
       <div class="product-card reveal">
         <div class="product-img-wrap">
-          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (2).jpeg" alt="Bakpia Ubi Ungu" />
+          <img class="product-img" src="foto/bakpia-ubi-ungu.png" alt="Bakpia Ubi Ungu" />
         </div>
         <div class="product-body">
           <div class="product-tag">Unik</div>
@@ -1140,14 +2030,14 @@
               <span class="product-price">Rp 25.000</span>
               <span class="product-unit">/ kotak (8 pcs)</span>
             </div>
-            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Ubi%20Ungu" class="btn-order" id="order-ubi">🛒 Pesan</a>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Ubi%20Ungu" class="btn-order" id="order-ubi" target="_blank" rel="noopener" aria-label="Pesan Bakpia Ubi Ungu via WhatsApp"><svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span class="btn-order-label">Pesan</span><span class="sr-only">Bakpia Ubi Ungu</span></a>
           </div>
         </div>
       </div>
 
       <div class="product-card reveal">
         <div class="product-img-wrap">
-          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.14.jpeg" alt="Bakpia Keju" />
+          <img class="product-img" src="foto/bakpia-keju.png" alt="Bakpia Keju" />
         </div>
         <div class="product-body">
           <div class="product-tag">Creamy</div>
@@ -1158,14 +2048,14 @@
               <span class="product-price">Rp 25.000</span>
               <span class="product-unit">/ kotak (8 pcs)</span>
             </div>
-            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Keju" class="btn-order" id="order-keju">🛒 Pesan</a>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Keju" class="btn-order" id="order-keju" target="_blank" rel="noopener" aria-label="Pesan Bakpia Keju via WhatsApp"><svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span class="btn-order-label">Pesan</span><span class="sr-only">Bakpia Keju</span></a>
           </div>
         </div>
       </div>
 
       <div class="product-card reveal">
         <div class="product-img-wrap">
-          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.14 (2).jpeg" alt="Bakpia Kacang Hijau" />
+          <img class="product-img" src="foto/bakpia-kacang hijau.png" alt="Bakpia Kacang Hijau" />
         </div>
         <div class="product-body">
           <div class="product-tag">Klasik</div>
@@ -1176,14 +2066,14 @@
               <span class="product-price">Rp 25.000</span>
               <span class="product-unit">/ kotak (8 pcs)</span>
             </div>
-            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Kacang%20Hijau" class="btn-order" id="order-kacang">🛒 Pesan</a>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Kacang%20Hijau" class="btn-order" id="order-kacang" target="_blank" rel="noopener" aria-label="Pesan Bakpia Kacang Hijau via WhatsApp"><svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span class="btn-order-label">Pesan</span><span class="sr-only">Bakpia Kacang Hijau</span></a>
           </div>
         </div>
       </div>
 
       <div class="product-card reveal">
         <div class="product-img-wrap">
-          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.14 (1).jpeg" alt="Bakpia Mix" />
+          <img class="product-img" src="foto/bakpia-mix.png" alt="Bakpia Mix" />
         </div>
         <div class="product-body">
           <div class="product-tag">Paket Hemat</div>
@@ -1194,7 +2084,7 @@
               <span class="product-price">Rp 25.000</span>
               <span class="product-unit">/ kotak (8 pcs)</span>
             </div>
-            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Mix" class="btn-order" id="order-mix">🛒 Pesan</a>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Mix" class="btn-order" id="order-mix" target="_blank" rel="noopener" aria-label="Pesan Bakpia Mix via WhatsApp"><svg class="wa-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span class="btn-order-label">Pesan</span><span class="sr-only">Bakpia Mix</span></a>
           </div>
         </div>
       </div>
@@ -1227,14 +2117,14 @@
         <div class="step" id="step-2">
           <div class="step-num">2</div>
           <div>
-            <div class="step-title">Pengolahan & Produksi</div>
+            <div class="step-title">Pengolahan dan Produksi</div>
             <div class="step-text">Proses produksi higienis di dapur bersertifikat P-IRT, memastikan standar kebersihan dan kualitas.</div>
           </div>
         </div>
         <div class="step" id="step-3">
           <div class="step-num">3</div>
           <div>
-            <div class="step-title">Pengemasan & Pengecekan</div>
+            <div class="step-title">Pengemasan dan Pengecekan</div>
             <div class="step-text">Setiap kotak dikemas dengan rapi dan melewati quality control sebelum siap dikirimkan.</div>
           </div>
         </div>
@@ -1271,37 +2161,37 @@
       <h2 class="section-title" style="color:white;">Koleksi <span style="color:var(--gold-light);">Foto Produk</span></h2>
     </div>
     <div class="gallery-grid reveal">
-      <div class="gallery-item wide">
+      <button type="button" class="gallery-item wide">
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.24.jpeg" alt="Semua varian Bakpia Malino" />
         <div class="gallery-overlay"></div>
-      </div>
-      <div class="gallery-item">
+      </button>
+      <button type="button" class="gallery-item">
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31 (2).jpeg" alt="Promo Bakpia Markisa" />
         <div class="gallery-overlay"></div>
-      </div>
-      <div class="gallery-item">
+      </button>
+      <button type="button" class="gallery-item">
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31 (1).jpeg" alt="Info Bakpia Malino" />
         <div class="gallery-overlay"></div>
-      </div>
-      <div class="gallery-item">
+      </button>
+      <button type="button" class="gallery-item">
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.32 (2).jpeg" alt="Bakpia Markisa Oleh-Oleh" />
         <div class="gallery-overlay"></div>
-      </div>
-      <div class="gallery-item">
+      </button>
+      <button type="button" class="gallery-item">
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31.jpeg" alt="Bakpia Markisa produk" />
         <div class="gallery-overlay"></div>
-      </div>
-      <div class="gallery-item wide">
+      </button>
+      <button type="button" class="gallery-item wide">
         <img src="foto/WhatsApp Image 2026-06-24 at 14.48.15.jpeg" alt="Bakpia Kacang Merah display" />
         <div class="gallery-overlay"></div>
-      </div>
+      </button>
     </div>
 
     <!-- VIDEO GALLERY SECTION -->
     <div class="video-gallery-section reveal">
       <div class="vg-heading">
-        <div class="vg-label">🎬 Video Promosi</div>
-        <h3 class="vg-title">Cuplikan <span>Produk &amp; Kemasan</span></h3>
+        <div class="vg-label">Video Promosi</div>
+        <h3 class="vg-title">Cuplikan <span>Produk dan Kemasan</span></h3>
       </div>
       <div class="video-grid">
         <!-- Video 1: Square (1080x1080) - Promosi Utama -->
@@ -1312,20 +2202,8 @@
             </video>
           </div>
           <div class="video-info">
-            <h4>🛒 Yang Dicari Setelah dari Malino</h4>
-            <p>Bakpia markisa khas Malino — camilan terlezat yang paling banyak dicari wisatawan.</p>
-          </div>
-        </div>
-        <!-- Video 2: Vertical Reels (22s) -->
-        <div class="video-card-item">
-          <div class="video-wrapper">
-            <video controls preload="metadata" playsinline>
-              <source src="video/WhatsApp Video 2026-06-24 at 20.55.33.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="video-info">
-            <h4>📦 Kemasan Praktis Siap Bawa Pulang</h4>
-            <p>Desain kotak yang higienis, rapi, dan mudah dibawa sebagai oleh-oleh khas Malino.</p>
+            <h4>Yang Dicari Setelah dari Malino</h4>
+            <p>Bakpia markisa khas Malino, camilan lezat yang banyak dicari wisatawan.</p>
           </div>
         </div>
       </div>
@@ -1345,41 +2223,38 @@
     </div>
     <div class="keunggulan-grid">
       <div class="keunggulan-card reveal">
-        <div class="k-icon">🌿</div>
+        <div class="k-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-leaf"></use></svg></div>
         <div class="k-title">Bahan Alami</div>
         <div class="k-desc">Tanpa bahan pengawet, terbuat dari bahan-bahan alami berkualitas tinggi.</div>
       </div>
       <div class="keunggulan-card reveal">
-        <div class="k-icon">✅</div>
-        <div class="k-title">Halal Certified</div>
+        <div class="k-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg></div>
+        <div class="k-title">Bersertifikat Halal</div>
         <div class="k-desc">Telah mendapatkan sertifikasi halal resmi sehingga aman untuk dikonsumsi seluruh keluarga.</div>
       </div>
       <div class="keunggulan-card reveal">
-        <div class="k-icon">🚚</div>
+        <div class="k-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-package"></use></svg></div>
         <div class="k-title">Pengiriman Cepat</div>
         <div class="k-desc">Tersedia layanan pengiriman ke seluruh Indonesia. Dikemas aman agar produk tiba dengan sempurna.</div>
       </div>
       <div class="keunggulan-card reveal">
-        <div class="k-icon">🎁</div>
+        <div class="k-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-heart"></use></svg></div>
         <div class="k-title">Cocok untuk Hadiah</div>
         <div class="k-desc">Kemasan menarik dan premium, sempurna sebagai oleh-oleh, hampers, atau souvenir acara.</div>
       </div>
       <div class="keunggulan-card reveal">
-        <div class="k-icon">💡</div>
+        <div class="k-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-award"></use></svg></div>
         <div class="k-title">Pelopor Rasa Markisa</div>
         <div class="k-desc">Satu-satunya bakpia dengan isian selai markisa asli khas Malino yang segar dan unik.</div>
       </div>
       <div class="keunggulan-card reveal">
-        <div class="k-icon">🤝</div>
+        <div class="k-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg></div>
         <div class="k-title">Pemberdayaan Lokal</div>
         <div class="k-desc">Bermitra langsung dengan petani di Malino untuk menyuplai buah markisa segar dan ubi ungu pilihan.</div>
       </div>
     </div>
-    <!-- Keunggulan decorative circles -->
-    <div class="bg-ornament" style="width:300px;height:300px;border-radius:50%;border:2px solid rgba(255,255,255,0.08);top:-50px;right:-80px;"></div>
-    <div class="bg-ornament" style="width:200px;height:200px;border-radius:50%;border:2px solid rgba(255,255,255,0.06);bottom:-30px;left:-60px;"></div>
     <div class="section-divider divider-bottom">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 C360,55 1080,55 1440,0 L1440,60 L0,60 Z" fill="var(--bg-ivory)"/></svg>
+      <svg viewBox="0 0 1440 64" preserveAspectRatio="none"><path d="M0,64 C180,42 300,20 470,28 C690,39 775,66 1005,48 C1188,34 1302,12 1440,26 L1440,64 L0,64 Z" fill="var(--bg-ivory)"/></svg>
     </div>
   </section>
 
@@ -1394,28 +2269,28 @@
       <p class="section-desc">Hubungi kami sekarang untuk pemesanan, informasi produk, atau kerjasama reseller.</p>
       <div class="contact-items">
         <a href="https://wa.me/6285261214130" class="contact-item" id="contact-wa">
-          <span class="contact-icon">📱</span>
+          <span class="contact-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
           <div>
             <div class="contact-label">WhatsApp / Telpon</div>
             <div class="contact-value">+62 852-6121-4130</div>
           </div>
         </a>
-        <a href="https://instagram.com/dapoer_noyutri" target="_blank" class="contact-item" id="contact-ig">
-          <span class="contact-icon">📸</span>
+        <a href="https://instagram.com/dapoer_noyutri" target="_blank" rel="noopener" class="contact-item" id="contact-ig">
+          <span class="contact-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></span>
           <div>
             <div class="contact-label">Instagram</div>
             <div class="contact-value">@dapoer_noyutri</div>
           </div>
         </a>
         <a href="mailto:dapoernoyutri21@gmail.com" class="contact-item" id="contact-email">
-          <span class="contact-icon">✉️</span>
+          <span class="contact-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-mail"></use></svg></span>
           <div>
             <div class="contact-label">Email</div>
             <div class="contact-value">dapoernoyutri21@gmail.com</div>
           </div>
         </a>
         <div class="contact-item">
-          <span class="contact-icon">📍</span>
+          <span class="contact-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg></span>
           <div>
             <div class="contact-label">Alamat</div>
             <div class="contact-value">Kel. Bonto Lerung, Kec. Tinggimoncong, Kab. Gowa, Sulawesi Selatan 92174</div>
@@ -1442,13 +2317,44 @@
     <div class="footer-wave">
       <svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0,40 C480,0 960,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg-ivory)"/></svg>
     </div>
-    <p>© 2026 <strong>PT. Dapoer Noyutri Malino</strong> · Bakpia Malino · Oleh-Oleh Khas Sulawesi Selatan</p>
-    <p style="margin-top:0.5rem;">
-      <a href="https://wa.me/6285261214130">WhatsApp</a> ·
-      <a href="https://instagram.com/dapoer_noyutri">Instagram</a> ·
-      <a href="mailto:dapoernoyutri21@gmail.com">Email</a>
-    </p>
+    <div class="footer-content">
+      <div>
+        <a href="#home" class="footer-logo" aria-label="Bakpia Malino">
+          <img src="foto/logo-bakpia malino.png" alt="Bakpia Malino" />
+        </a>
+        <p class="footer-desc">Oleh-oleh khas Malino dengan rasa markisa segar dan varian favorit keluarga.</p>
+      </div>
+      <div>
+        <div class="footer-title">Menu</div>
+        <ul class="footer-menu">
+          <li><a href="#mitra">Mitra Kami</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Mitra Kami</div>
+        <div class="footer-partner-logos">
+          <img class="footer-partner-logo logo-dekatlokal-footer" src="foto/logo-dekatlokal.png" alt="DekatLokal" />
+          <img class="footer-partner-logo logo-rumah-bumn-footer" src="foto/logo-rumah bumn makassar.png" alt="Rumah BUMN Makassar" />
+          <img class="footer-partner-logo logo-bri-footer" src="foto/logo-bank bri.png" alt="Bank BRI" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy;2026 Bakpia Malino. All rights reserved. Powered by <a href="https://dekatlokal.com" target="_blank" rel="noopener">DekatLokal</a>.
+    </div>
   </footer>
+
+  <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Preview galeri" hidden>
+    <div class="lightbox-dialog">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Tutup preview">&times;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
 
   <!-- WHATSAPP FAB -->
   <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20ingin%20pesan%20Bakpia%20Malino" class="wa-fab" id="wa-fab" aria-label="Chat WhatsApp">
@@ -1467,11 +2373,76 @@
     // Hamburger menu
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
+    const mobileClose = document.getElementById('mobile-close');
+    const setMenuOpen = (isOpen) => {
+      navLinks.classList.toggle('open', isOpen);
+      hamburger.classList.toggle('open', isOpen);
+      document.body.classList.toggle('menu-open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    };
     hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+      setMenuOpen(!navLinks.classList.contains('open'));
     });
+    mobileClose.addEventListener('click', () => setMenuOpen(false));
     navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => navLinks.classList.remove('open'));
+      a.addEventListener('click', () => setMenuOpen(false));
+    });
+
+    // Active navbar state follows the section in view
+    const sectionNavLinks = Array.from(
+      navLinks.querySelectorAll('li:not(.mobile-menu-header):not(.mobile-menu-footer) a[href^="#"]')
+    );
+    const navLinkBySection = new Map(
+      sectionNavLinks.map(link => [link.getAttribute('href').slice(1), link])
+    );
+    const trackedSections = Array.from(navLinkBySection.keys())
+      .map(id => document.getElementById(id))
+      .filter(Boolean);
+    const setActiveNav = (sectionId) => {
+      sectionNavLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
+      });
+    };
+    const activeNavObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) setActiveNav(entry.target.id);
+      });
+    }, { rootMargin: '-42% 0px -46% 0px', threshold: 0 });
+    trackedSections.forEach(section => activeNavObs.observe(section));
+
+    // Gallery lightbox
+    const lightbox = document.getElementById('gallery-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const openLightbox = (img) => {
+      lightbox.hidden = false;
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = img.alt;
+      document.body.classList.add('lightbox-open');
+      requestAnimationFrame(() => lightbox.classList.add('open'));
+    };
+    const closeLightbox = () => {
+      lightbox.classList.remove('open');
+      document.body.classList.remove('lightbox-open');
+      lightbox.hidden = true;
+      lightboxImg.src = '';
+      lightboxImg.alt = '';
+      lightboxCaption.textContent = '';
+    };
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+      img.closest('.gallery-item').addEventListener('click', () => openLightbox(img));
+    });
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        if (lightbox.classList.contains('open')) closeLightbox();
+        setMenuOpen(false);
+      }
     });
 
     // Intersection Observer for reveal animations
