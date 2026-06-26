@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakpia Malino – Oleh-Oleh Khas Sulawesi Selatan</title>
+  <meta name="description" content="Bakpia Malino, oleh-oleh khas Malino, Sulawesi Selatan. Tersedia rasa Markisa, Coklat, Keju, Ubi Ungu, Kacang Hijau & Mix. Halal, 100% Indonesia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #e8621a;
+      --primary-dark: #c44d0f;
+      --primary-light: #f5883a;
+      --gold: #f5a623;
+      --gold-light: #ffd166;
+      --dark: #1a0a00;
+      --dark-2: #2d1500;
+      --text: #3a1c00;
+      --text-muted: #7a4f2a;
+      --bg: #fffbf5;
+      --bg-warm: #fff3e0;
+      --white: #ffffff;
+      --radius: 20px;
+      --radius-sm: 12px;
+      --shadow: 0 20px 60px rgba(232,98,26,0.15);
+      --shadow-card: 0 8px 32px rgba(0,0,0,0.10);
+      
+      /* New Background Palette Variables */
+      --bg-cream: #fffbf5;
+      --bg-beige: #fbf0df;
+      --bg-ivory: #fffff2;
+      --bg-soft-orange: #ffe9d6;
+      --bg-light-brown: #eedcd0;
+      --accent-olive: #9fa896;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg-cream);
+      /* Elegant topographic wavy background lines representing the mountain landscape of Malino */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg stroke='%23e8621a' stroke-opacity='0.022' stroke-width='1.5' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3Cpath d='M100 -40 C 120 20, 80 60, 160 100 C 240 140, 180 180, 220 240'/%3E%3Cpath d='M130 -40 C 150 20, 110 60, 190 100 C 270 140, 210 180, 250 240'/%3E%3C/g%3E%3C/svg%3E");
+      color: var(--text);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fine Paper Grain Noise Overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      pointer-events: none;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* ========== NAVBAR ========== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      background: rgba(255,251,245,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(232,98,26,0.12);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 4px 24px rgba(232,98,26,0.12); }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 2px;
+      background: var(--primary);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--primary-dark); color: var(--white) !important; }
+    .nav-cta::after { display: none !important; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 3rem;
+      padding: 100px 8% 120px;
+      background: transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Background video for hero */
+    .hero-bg-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      pointer-events: none;
+    }
+    /* Warm overlay on top of the background video to keep text readable */
+    .hero-video-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        /* Strong fade from left covers text area */
+        linear-gradient(
+          to right,
+          rgba(255, 251, 245, 0.97) 0%,
+          rgba(255, 251, 245, 0.95) 30%,
+          rgba(255, 248, 240, 0.88) 55%,
+          rgba(255, 245, 235, 0.82) 80%,
+          rgba(255, 242, 228, 0.75) 100%
+        ),
+        /* Top-down warm tint */
+        linear-gradient(
+          to bottom,
+          rgba(255, 251, 245, 0.6) 0%,
+          rgba(255, 245, 230, 0.3) 100%
+        );
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(245,166,35,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(232,98,26,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .hero-content { position: relative; z-index: 3; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: var(--dark);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 16px rgba(245,166,35,0.3);
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--dark);
+      margin-bottom: 1.2rem;
+    }
+    .hero-title .highlight {
+      color: var(--primary);
+      position: relative;
+    }
+    .hero-title .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 2px; left: 0; right: 0;
+      height: 8px;
+      background: rgba(232,98,26,0.15);
+      z-index: -1;
+      border-radius: 4px;
+    }
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 480px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(232,98,26,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(232,98,26,0.45); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--primary);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--primary);
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover { background: var(--primary); color: var(--white); }
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+      font-weight: 500;
+    }
+    .hero-image {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%; height: 120%;
+      background: radial-gradient(circle, rgba(232, 98, 26, 0.12) 0%, rgba(245, 166, 35, 0.04) 50%, transparent 70%);
+      z-index: -1;
+      filter: blur(40px);
+      pointer-events: none;
+      animation: pulse-glow 8s ease-in-out infinite alternate;
+    }
+    @keyframes pulse-glow {
+      0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.8; }
+      100% { transform: translate(-50%, -50%) scale(1.05); opacity: 1.2; }
+    }
+    .hero-img-wrap {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(232,98,26,0.25);
+      animation: float 6s ease-in-out infinite;
+    }
+    .hero-img-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+    }
+    /* Hero image z-index above overlay */
+    .hero-image { position: relative; z-index: 3; }
+    /* Video Gallery Section */
+    .video-gallery-section {
+      margin-top: 5rem;
+    }
+    .video-gallery-section .vg-heading {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .video-gallery-section .vg-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      background: rgba(255,255,255,0.1);
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 0.8rem;
+    }
+    .video-gallery-section .vg-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .video-gallery-section .vg-title span { color: var(--gold-light); }
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .video-card-item {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      cursor: pointer;
+    }
+    .video-card-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(245,166,35,0.25);
+      border-color: rgba(245,166,35,0.35);
+    }
+    .video-wrapper {
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-wrapper video {
+      width: 100%;
+      display: block;
+      max-height: 380px;
+      object-fit: cover;
+    }
+    .video-info {
+      padding: 0.9rem 1.1rem 1.1rem;
+    }
+    .video-info h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+      line-height: 1.3;
+    }
+    .video-info p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.5;
+      margin: 0;
+    }
+    @media (max-width: 700px) {
+      .video-grid { grid-template-columns: 1fr; }
+    }
+    .hero-float-badge {
+      position: absolute;
+      background: var(--white);
+      border-radius: 16px;
+      padding: 0.8rem 1.2rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .hero-float-badge.top-left { top: 24px; left: -24px; }
+    .hero-float-badge.bottom-right { bottom: 30px; right: -24px; }
+    .badge-icon { font-size: 1.4rem; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* ========== SECTION COMMON ========== */
+    section { padding: 80px 8%; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: rgba(232,98,26,0.08);
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .section-title .accent { color: var(--primary); }
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 560px;
+    }
+    .text-center { text-align: center; }
+    .text-center .section-desc { margin: 0 auto; }
+
+    /* ========== ABOUT ========== */
+    .about {
+      background: linear-gradient(180deg, rgba(255,251,245,0.75) 0%, rgba(251,240,223,0.75) 100%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      position: relative;
+    }
+    .about-img-item {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+    .about-img-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .about-img-item:hover img { transform: scale(1.05); }
+    .about-img-item.tall { grid-row: span 2; }
+    .about-img-item.tall img { height: 420px; }
+    .about-features { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .about-feat {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.2rem;
+      background: var(--bg-warm);
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--primary);
+      transition: transform 0.2s;
+    }
+    .about-feat:hover { transform: translateX(6px); }
+    .feat-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .feat-title { font-weight: 700; color: var(--dark); margin-bottom: 0.2rem; }
+    .feat-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* ========== PRODUCTS ========== */
+    .products { 
+      background: linear-gradient(180deg, rgba(255,255,242,0.75) 0%, rgba(251,240,223,0.75) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(232,98,26,0.18);
+    }
+    .product-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .product-card:hover .product-img { transform: scale(1.04); }
+    .product-img-wrap { overflow: hidden; }
+    .product-body { 
+      padding: 1.2rem 1.4rem; 
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      background: rgba(232,98,26,0.08);
+      padding: 0.2rem 0.7rem;
+      border-radius: 50px;
+      margin-bottom: 0.5rem;
+    }
+    .product-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 0.3rem;
+    }
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 0.8rem;
+      gap: 0.5rem;
+    }
+    .product-price-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+    .product-price { font-size: 1.25rem; font-weight: 800; color: var(--primary); line-height: 1.1; }
+    .product-unit { font-size: 0.75rem; font-weight: 500; color: var(--text-muted); line-height: 1.1; }
+    .btn-order {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--primary);
+      color: var(--white);
+      padding: 0.5rem 1.1rem;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-order:hover { background: var(--primary-dark); transform: scale(1.04); }
+
+    /* ========== PROSES ========== */
+    .proses {
+      background: linear-gradient(180deg, rgba(255,251,245,0.75) 0%, rgba(251,240,223,0.75) 50%, rgba(255,251,245,0.75) 100%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .proses-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .proses-img img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s;
+    }
+    .proses-img:hover img { transform: scale(1.03); }
+    .proses-steps { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.2rem; }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    .step.visible { opacity: 1; transform: translateX(0); }
+    .step-num {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(232,98,26,0.3);
+    }
+    .step-title { font-weight: 700; color: var(--dark); margin-bottom: 0.2rem; }
+    .step-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* ========== GALLERY ========== */
+    .gallery { 
+      background-color: var(--dark); 
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%23f5a623' stroke-opacity='0.025' stroke-width='1.2' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3C/g%3E%3C/svg%3E");
+      padding: 100px 8% 80px; 
+      position: relative; 
+      overflow: hidden; 
+    }
+    .gallery .section-title { color: var(--white); }
+    .gallery .section-label { background: rgba(255,255,255,0.1); color: var(--gold-light); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .gallery-item {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+    .gallery-item.wide { grid-column: span 2; }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s;
+    }
+    .gallery-item.wide img { height: 280px; }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.6) 100%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+    /* ========== KEUNGGULAN ========== */
+    .keunggulan { 
+      background-image: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%23ffffff' stroke-opacity='0.035' stroke-width='1.2' fill='none'%3E%3Cpath d='M-40 40 C 20 20, 60 100, 120 70 C 180 40, 210 120, 240 100'/%3E%3Cpath d='M-40 70 C 20 50, 60 130, 120 100 C 180 70, 210 150, 240 130'/%3E%3Cpath d='M-40 100 C 20 80, 60 160, 120 130 C 180 100, 210 180, 240 160'/%3E%3Cpath d='M-40 130 C 20 110, 60 190, 120 160 C 180 130, 210 210, 240 190'/%3E%3Cpath d='M-40 160 C 20 140, 60 220, 120 190 C 180 160, 210 240, 240 220'/%3E%3C/g%3E%3C/svg%3E"),
+        linear-gradient(135deg, var(--primary), var(--primary-dark));
+      position: relative; 
+      overflow: hidden; 
+    }
+    .keunggulan .section-title { color: var(--white); }
+    .keunggulan .section-label { background: rgba(255,255,255,0.15); color: var(--white); }
+    .keunggulan-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .keunggulan-card {
+      flex: 1 1 320px;
+      max-width: 360px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius-sm);
+      padding: 2.2rem 1.8rem;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: background 0.3s, transform 0.3s;
+    }
+    .keunggulan-card:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-6px);
+    }
+    .k-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .k-title { font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
+    .k-desc { font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.6; }
+
+    /* ========== CONTACT ========== */
+    .contact {
+      background: linear-gradient(180deg, rgba(255,255,242,0.75) 0%, rgba(251,240,223,0.75) 100%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .contact-img img { width: 100%; display: block; }
+    .contact-items { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.2rem;
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .contact-item:hover { transform: translateX(6px); box-shadow: 0 6px 24px rgba(232,98,26,0.15); }
+    .contact-icon { font-size: 1.5rem; width: 44px; text-align: center; }
+    .contact-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+    .contact-value { font-weight: 700; color: var(--dark); }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(180deg, #1a0a00 0%, #0d0500 100%);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 3rem 8% 2rem;
+      font-size: 0.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+    footer strong { color: var(--gold-light); }
+    footer a { color: var(--primary-light); text-decoration: none; }
+    .footer-wave {
+      position: absolute;
+      top: 0; left: 0; width: 100%;
+      line-height: 0;
+      pointer-events: none;
+    }
+    .footer-wave svg {
+      display: block; width: 100%; height: 40px;
+    }
+
+    /* ========== WHATSAPP FAB ========== */
+    .wa-fab {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 999;
+      width: 60px; height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+      text-decoration: none;
+      animation: pulse-wa 2.5s infinite;
+      transition: transform 0.2s;
+    }
+    .wa-fab:hover { transform: scale(1.12); animation: none; }
+    .wa-fab svg { width: 32px; height: 32px; fill: white; }
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 6px 40px rgba(37,211,102,0.7); }
+    }
+
+    /* ========== SCROLL REVEAL ========== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px; left: 0; right: 0;
+        background: var(--bg);
+        padding: 1.5rem 5%;
+        border-bottom: 1px solid rgba(232,98,26,0.1);
+        gap: 1rem;
+        z-index: 999;
+      }
+      .hamburger { display: flex; }
+      .hero { grid-template-columns: 1fr; padding: 100px 6% 60px; text-align: center; }
+      .hero-image { display: none; }
+      .hero-actions { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .about { grid-template-columns: 1fr; gap: 2rem; }
+      .about-img-grid { display: none; }
+      .proses { grid-template-columns: 1fr; gap: 2rem; }
+      .contact { grid-template-columns: 1fr; gap: 2rem; }
+      .contact-img { display: none; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item.wide { grid-column: span 2; }
+      section { padding: 60px 6%; }
+    }
+
+    @media (max-width: 600px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .keunggulan-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ========== DECORATIVE ORNAMENTS & BG EFFECTS ========== */
+    .bg-ornament {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+      user-select: none;
+    }
+    .blob-blur {
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.08;
+      animation: drift 15s ease-in-out infinite alternate;
+    }
+    .blob-orange { background: var(--primary); }
+    .blob-gold { background: var(--gold); }
+    .blob-olive { background: var(--accent-olive); }
+    .blob-brown { background: var(--dark-2); }
+    .blob-soft { background: var(--bg-soft-orange); }
+    
+    @keyframes drift {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(60px, 40px) scale(1.2); }
+    }
+    @keyframes drift-reverse {
+      0% { transform: translate(0, 0) scale(1.15); }
+      100% { transform: translate(-50px, -30px) scale(0.9); }
+    }
+    
+    .leaf-floater {
+      color: var(--primary);
+      opacity: 0.05;
+      animation: float-leaf 12s ease-in-out infinite;
+    }
+    .leaf-floater-olive {
+      color: var(--accent-olive);
+      opacity: 0.06;
+      animation: float-leaf-reverse 16s ease-in-out infinite alternate;
+    }
+    .leaf-deco-1 { top: 8%; left: 3%; width: 140px; }
+    .leaf-deco-2 { bottom: 12%; right: 3%; width: 160px; }
+    .leaf-deco-3 { top: 15%; right: 4%; width: 130px; }
+    .leaf-deco-4 { bottom: 8%; left: 4%; width: 150px; }
+    .leaf-deco-5 { top: 10%; left: 5%; width: 120px; }
+    
+    @keyframes float-leaf {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(6deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+    @keyframes float-leaf-reverse {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(12px) rotate(-5deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    .hero-mountains {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+    
+    .section-divider {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .divider-bottom {
+      bottom: 0;
+    }
+    .divider-top {
+      top: 0;
+    }
+    .section-divider svg {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Bakpia <span>Malino</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#proses">Proses</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak" class="nav-cta">Pesan Sekarang</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <!-- Background Video -->
+    <video class="hero-bg-video" autoplay loop muted playsinline poster="foto/WhatsApp Image 2026-06-24 at 14.48.30 (1).jpeg">
+      <source src="video/WhatsApp Video 2026-06-24 at 20.55.33 (1).mp4" type="video/mp4" />
+    </video>
+    <!-- Warm overlay to keep content readable -->
+    <div class="hero-video-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🌟 Oleh-Oleh Khas Malino</div>
+      <h1 class="hero-title">
+        Cita Rasa <span class="highlight">Alam Malino</span><br/>dalam Setiap Gigitan
+      </h1>
+      <p class="hero-desc">
+        Bakpia Malino hadir dengan pilihan rasa unik dari bahan-bahan segar khas Sulawesi Selatan.
+        Diolah dengan penuh cinta, bersertifikat Halal & 100% Indonesia.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20ingin%20pesan%20Bakpia%20Malino" class="btn-primary" id="hero-order-btn">
+          🛒 Pesan Sekarang
+        </a>
+        <a href="#produk" class="btn-secondary">Lihat Produk →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Varian Rasa</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">200g</div>
+          <div class="stat-label">Per Kotak</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Halal</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-wrap">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.30 (1).jpeg" alt="Bakpia Malino produk" />
+      </div>
+      <div class="hero-float-badge top-left">
+        <span class="badge-icon">🏆</span>
+        <span>Sertifikat Halal</span>
+      </div>
+      <div class="hero-float-badge bottom-right">
+        <span class="badge-icon">📦</span>
+        <span>Siap Kirim</span>
+      </div>
+    </div>
+    <!-- Hero decorative elements -->
+    <div class="bg-ornament blob-blur blob-orange" style="width:350px;height:350px;top:-80px;right:-100px;animation:drift 18s ease-in-out infinite alternate;"></div>
+    <div class="bg-ornament blob-blur blob-gold" style="width:280px;height:280px;bottom:10%;left:-80px;animation:drift-reverse 20s ease-in-out infinite alternate;"></div>
+    <div class="section-divider divider-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="var(--bg-cream)"/></svg>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="about" id="tentang">
+    <div class="about-img-grid reveal">
+      <div class="about-img-item tall">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31 (1).jpeg" alt="Tentang Bakpia Malino" />
+      </div>
+      <div class="about-img-item">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (1).jpeg" alt="Bakpia Coklat" />
+      </div>
+      <div class="about-img-item">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (2).jpeg" alt="Bakpia Ubi Ungu" />
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="section-label">Tentang Kami</div>
+      <h2 class="section-title">Apa itu <span class="accent">Bakpia Malino?</span></h2>
+      <p class="section-desc">
+        Bakpia Malino adalah camilan tradisional khas Malino, Kabupaten Gowa, Sulawesi Selatan.
+        Diproduksi oleh PT. Dapoer Noyutri Malino, kami menghadirkan cita rasa unik dengan bahan
+        baku pilihan yang segar langsung dari alam Malino.
+      </p>
+      <div class="about-features">
+        <div class="about-feat">
+          <div class="feat-icon">🌿</div>
+          <div>
+            <div class="feat-title">Bahan Baku Segar</div>
+            <div class="feat-text">Menggunakan buah markisa matang segar langsung dari pohonnya, kaya vitamin C alami.</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="feat-icon">✅</div>
+          <div>
+            <div class="feat-title">Bersertifikat Halal</div>
+            <div class="feat-text">Seluruh produk telah mendapatkan sertifikasi Halal dan P-IRT dari Dinas Kesehatan.</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="feat-icon">🇮🇩</div>
+          <div>
+            <div class="feat-title">Produk Lokal Bangga</div>
+            <div class="feat-text">100% produk asli Indonesia, mendukung UMKM lokal Sulawesi Selatan.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About decorative elements -->
+    <svg class="bg-ornament leaf-floater leaf-deco-1" viewBox="0 0 120 120" fill="currentColor">
+      <path d="M60 15 C35 35 35 75 60 105 C85 75 85 35 60 15 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 15 L60 105" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M42 45 C48 48 55 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M78 45 C72 48 65 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M40 65 C48 67 55 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M80 65 C72 67 65 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M45 85 C50 86 55 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M75 85 C70 86 65 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <svg class="bg-ornament leaf-floater-olive leaf-deco-2" viewBox="0 0 120 120" fill="currentColor">
+      <path d="M60 15 C35 35 35 75 60 105 C85 75 85 35 60 15 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 15 L60 105" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M42 45 C48 48 55 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M78 45 C72 48 65 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M40 65 C48 67 55 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M80 65 C72 67 65 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M45 85 C50 86 55 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M75 85 C70 86 65 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <div class="bg-ornament blob-blur blob-soft" style="width:300px;height:300px;top:20%;right:-60px;animation:drift 16s ease-in-out infinite alternate;"></div>
+    <div class="section-divider divider-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="var(--bg-ivory)"/></svg>
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section class="products" id="produk">
+    <div class="text-center reveal">
+      <div class="section-label">Varian Produk</div>
+      <h2 class="section-title">Pilihan Rasa <span class="accent">Istimewa</span></h2>
+      <p class="section-desc">Tersedia dalam berbagai varian rasa unik, cocok untuk oleh-oleh dan hadiah spesial.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.13.jpeg" alt="Bakpia Markisa" />
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Best Seller</div>
+          <div class="product-name">Bakpia Markisa</div>
+          <div class="product-desc">Isian selai markisa segar, cita rasa asam-manis khas Malino yang unik dan menyegarkan.</div>
+          <div class="product-footer">
+            <div class="product-price-group">
+              <span class="product-price">Rp 25.000</span>
+              <span class="product-unit">/ kotak (8 pcs)</span>
+            </div>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Markisa" class="btn-order" id="order-markisa">🛒 Pesan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (1).jpeg" alt="Bakpia Coklat" />
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Favorit</div>
+          <div class="product-name">Bakpia Coklat</div>
+          <div class="product-desc">Paduan lembut kulit bakpia dengan isian coklat premium yang lumer di mulut.</div>
+          <div class="product-footer">
+            <div class="product-price-group">
+              <span class="product-price">Rp 25.000</span>
+              <span class="product-unit">/ kotak (8 pcs)</span>
+            </div>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Coklat" class="btn-order" id="order-coklat">🛒 Pesan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.13 (2).jpeg" alt="Bakpia Ubi Ungu" />
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Unik</div>
+          <div class="product-name">Bakpia Ubi Ungu</div>
+          <div class="product-desc">Sensasi warna dan rasa manis alami dari ubi ungu pilihan yang kaya antioksidan.</div>
+          <div class="product-footer">
+            <div class="product-price-group">
+              <span class="product-price">Rp 25.000</span>
+              <span class="product-unit">/ kotak (8 pcs)</span>
+            </div>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Ubi%20Ungu" class="btn-order" id="order-ubi">🛒 Pesan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.14.jpeg" alt="Bakpia Keju" />
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Creamy</div>
+          <div class="product-name">Bakpia Keju</div>
+          <div class="product-desc">Gurihnya keju pilihan berpadu dengan kulit bakpia yang renyah, sempurna untuk semua kalangan.</div>
+          <div class="product-footer">
+            <div class="product-price-group">
+              <span class="product-price">Rp 25.000</span>
+              <span class="product-unit">/ kotak (8 pcs)</span>
+            </div>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Keju" class="btn-order" id="order-keju">🛒 Pesan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.14 (2).jpeg" alt="Bakpia Kacang Hijau" />
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Klasik</div>
+          <div class="product-name">Bakpia Kacang Hijau</div>
+          <div class="product-desc">Cita rasa klasik kacang hijau yang legit, pilihan tradisional yang selalu dicintai.</div>
+          <div class="product-footer">
+            <div class="product-price-group">
+              <span class="product-price">Rp 25.000</span>
+              <span class="product-unit">/ kotak (8 pcs)</span>
+            </div>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Kacang%20Hijau" class="btn-order" id="order-kacang">🛒 Pesan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img class="product-img" src="foto/WhatsApp Image 2026-06-24 at 14.48.14 (1).jpeg" alt="Bakpia Mix" />
+        </div>
+        <div class="product-body">
+          <div class="product-tag">Paket Hemat</div>
+          <div class="product-name">Bakpia Mix</div>
+          <div class="product-desc">Nikmati berbagai rasa sekaligus dalam satu kotak. Pilihan terbaik untuk mencoba semua varian!</div>
+          <div class="product-footer">
+            <div class="product-price-group">
+              <span class="product-price">Rp 25.000</span>
+              <span class="product-unit">/ kotak (8 pcs)</span>
+            </div>
+            <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20mau%20pesan%20Bakpia%20Mix" class="btn-order" id="order-mix">🛒 Pesan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Products decorative elements -->
+    <div class="bg-ornament blob-blur blob-olive" style="width:250px;height:250px;top:15%;left:-80px;animation:drift 14s ease-in-out infinite alternate;"></div>
+    <div class="bg-ornament blob-blur blob-gold" style="width:200px;height:200px;bottom:20%;right:-60px;animation:drift-reverse 17s ease-in-out infinite alternate;"></div>
+    <div class="section-divider divider-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C240,10 720,10 1440,60 L1440,60 L0,60 Z" fill="var(--bg-cream)"/></svg>
+    </div>
+  </section>
+
+  <!-- PROSES PRODUKSI -->
+  <section class="proses" id="proses">
+    <div class="proses-img reveal">
+      <img src="foto/WhatsApp Image 2026-06-24 at 14.48.30.jpeg" alt="Proses Produksi Bakpia Malino" />
+    </div>
+    <div class="reveal">
+      <div class="section-label">Proses Produksi</div>
+      <h2 class="section-title">Dibuat dengan <span class="accent">Penuh Cinta</span></h2>
+      <p class="section-desc">Setiap bakpia melewati proses seleksi ketat untuk memastikan kualitas terbaik sampai ke tangan Anda.</p>
+      <div class="proses-steps">
+        <div class="step" id="step-1">
+          <div class="step-num">1</div>
+          <div>
+            <div class="step-title">Seleksi Bahan Baku</div>
+            <div class="step-text">Memilih bahan baku terbaik: markisa matang segar, coklat premium, ubi ungu pilihan langsung dari petani lokal.</div>
+          </div>
+        </div>
+        <div class="step" id="step-2">
+          <div class="step-num">2</div>
+          <div>
+            <div class="step-title">Pengolahan & Produksi</div>
+            <div class="step-text">Proses produksi higienis di dapur bersertifikat P-IRT, memastikan standar kebersihan dan kualitas.</div>
+          </div>
+        </div>
+        <div class="step" id="step-3">
+          <div class="step-num">3</div>
+          <div>
+            <div class="step-title">Pengemasan & Pengecekan</div>
+            <div class="step-text">Setiap kotak dikemas dengan rapi dan melewati quality control sebelum siap dikirimkan.</div>
+          </div>
+        </div>
+        <div class="step" id="step-4">
+          <div class="step-num">4</div>
+          <div>
+            <div class="step-title">Siap Disalurkan</div>
+            <div class="step-text">Produk siap dikirim ke seluruh penjuru Sulawesi Selatan dan berbagai kota di Indonesia.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Proses decorative elements -->
+    <svg class="bg-ornament leaf-floater leaf-deco-3" viewBox="0 0 120 120" fill="currentColor">
+      <path d="M60 15 C35 35 35 75 60 105 C85 75 85 35 60 15 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 15 L60 105" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M42 45 C48 48 55 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M78 45 C72 48 65 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M40 65 C48 67 55 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M80 65 C72 67 65 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M45 85 C50 86 55 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M75 85 C70 86 65 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <div class="bg-ornament blob-blur blob-brown" style="width:220px;height:220px;bottom:10%;left:-50px;animation:drift-reverse 15s ease-in-out infinite alternate;"></div>
+    <div class="section-divider divider-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 C360,55 1080,55 1440,0 L1440,60 L0,60 Z" fill="var(--dark)"/></svg>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="gallery" id="galeri">
+    <div class="text-center reveal">
+      <div class="section-label">Galeri</div>
+      <h2 class="section-title" style="color:white;">Koleksi <span style="color:var(--gold-light);">Foto Produk</span></h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item wide">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.24.jpeg" alt="Semua varian Bakpia Malino" />
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31 (2).jpeg" alt="Promo Bakpia Markisa" />
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31 (1).jpeg" alt="Info Bakpia Malino" />
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.32 (2).jpeg" alt="Bakpia Markisa Oleh-Oleh" />
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.31.jpeg" alt="Bakpia Markisa produk" />
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="foto/WhatsApp Image 2026-06-24 at 14.48.15.jpeg" alt="Bakpia Kacang Merah display" />
+        <div class="gallery-overlay"></div>
+      </div>
+    </div>
+
+    <!-- VIDEO GALLERY SECTION -->
+    <div class="video-gallery-section reveal">
+      <div class="vg-heading">
+        <div class="vg-label">🎬 Video Promosi</div>
+        <h3 class="vg-title">Cuplikan <span>Produk &amp; Kemasan</span></h3>
+      </div>
+      <div class="video-grid">
+        <!-- Video 1: Square (1080x1080) - Promosi Utama -->
+        <div class="video-card-item">
+          <div class="video-wrapper">
+            <video controls preload="metadata" playsinline>
+              <source src="video/WhatsApp Video 2026-06-24 at 20.55.33 (1).mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-info">
+            <h4>🛒 Yang Dicari Setelah dari Malino</h4>
+            <p>Bakpia markisa khas Malino — camilan terlezat yang paling banyak dicari wisatawan.</p>
+          </div>
+        </div>
+        <!-- Video 2: Vertical Reels (22s) -->
+        <div class="video-card-item">
+          <div class="video-wrapper">
+            <video controls preload="metadata" playsinline>
+              <source src="video/WhatsApp Video 2026-06-24 at 20.55.33.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-info">
+            <h4>📦 Kemasan Praktis Siap Bawa Pulang</h4>
+            <p>Desain kotak yang higienis, rapi, dan mudah dibawa sebagai oleh-oleh khas Malino.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery decorative bottom wave -->
+    <div class="section-divider divider-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C480,5 960,5 1440,60 L1440,60 L0,60 Z" fill="var(--primary)"/></svg>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section class="keunggulan">
+    <div class="text-center reveal">
+      <div class="section-label">Keunggulan Kami</div>
+      <h2 class="section-title">Mengapa Memilih <span style="color:var(--gold-light);">Bakpia Malino?</span></h2>
+    </div>
+    <div class="keunggulan-grid">
+      <div class="keunggulan-card reveal">
+        <div class="k-icon">🌿</div>
+        <div class="k-title">Bahan Alami</div>
+        <div class="k-desc">Tanpa bahan pengawet, terbuat dari bahan-bahan alami berkualitas tinggi.</div>
+      </div>
+      <div class="keunggulan-card reveal">
+        <div class="k-icon">✅</div>
+        <div class="k-title">Halal Certified</div>
+        <div class="k-desc">Telah mendapatkan sertifikasi halal resmi sehingga aman untuk dikonsumsi seluruh keluarga.</div>
+      </div>
+      <div class="keunggulan-card reveal">
+        <div class="k-icon">🚚</div>
+        <div class="k-title">Pengiriman Cepat</div>
+        <div class="k-desc">Tersedia layanan pengiriman ke seluruh Indonesia. Dikemas aman agar produk tiba dengan sempurna.</div>
+      </div>
+      <div class="keunggulan-card reveal">
+        <div class="k-icon">🎁</div>
+        <div class="k-title">Cocok untuk Hadiah</div>
+        <div class="k-desc">Kemasan menarik dan premium, sempurna sebagai oleh-oleh, hampers, atau souvenir acara.</div>
+      </div>
+      <div class="keunggulan-card reveal">
+        <div class="k-icon">💡</div>
+        <div class="k-title">Pelopor Rasa Markisa</div>
+        <div class="k-desc">Satu-satunya bakpia dengan isian selai markisa asli khas Malino yang segar dan unik.</div>
+      </div>
+      <div class="keunggulan-card reveal">
+        <div class="k-icon">🤝</div>
+        <div class="k-title">Pemberdayaan Lokal</div>
+        <div class="k-desc">Bermitra langsung dengan petani di Malino untuk menyuplai buah markisa segar dan ubi ungu pilihan.</div>
+      </div>
+    </div>
+    <!-- Keunggulan decorative circles -->
+    <div class="bg-ornament" style="width:300px;height:300px;border-radius:50%;border:2px solid rgba(255,255,255,0.08);top:-50px;right:-80px;"></div>
+    <div class="bg-ornament" style="width:200px;height:200px;border-radius:50%;border:2px solid rgba(255,255,255,0.06);bottom:-30px;left:-60px;"></div>
+    <div class="section-divider divider-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,0 C360,55 1080,55 1440,0 L1440,60 L0,60 Z" fill="var(--bg-ivory)"/></svg>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="contact" id="kontak">
+    <div class="contact-img reveal">
+      <img src="foto/WhatsApp Image 2026-06-24 at 14.48.32 (1).jpeg" alt="Kontak Bakpia Malino" />
+    </div>
+    <div class="reveal">
+      <div class="section-label">Hubungi Kami</div>
+      <h2 class="section-title">Siap Melayani <span class="accent">Pesanan Anda</span></h2>
+      <p class="section-desc">Hubungi kami sekarang untuk pemesanan, informasi produk, atau kerjasama reseller.</p>
+      <div class="contact-items">
+        <a href="https://wa.me/6285261214130" class="contact-item" id="contact-wa">
+          <span class="contact-icon">📱</span>
+          <div>
+            <div class="contact-label">WhatsApp / Telpon</div>
+            <div class="contact-value">+62 852-6121-4130</div>
+          </div>
+        </a>
+        <a href="https://instagram.com/dapoer_noyutri" target="_blank" class="contact-item" id="contact-ig">
+          <span class="contact-icon">📸</span>
+          <div>
+            <div class="contact-label">Instagram</div>
+            <div class="contact-value">@dapoer_noyutri</div>
+          </div>
+        </a>
+        <a href="mailto:dapoernoyutri21@gmail.com" class="contact-item" id="contact-email">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">dapoernoyutri21@gmail.com</div>
+          </div>
+        </a>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <div class="contact-label">Alamat</div>
+            <div class="contact-value">Kel. Bonto Lerung, Kec. Tinggimoncong, Kab. Gowa, Sulawesi Selatan 92174</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact decorative elements -->
+    <svg class="bg-ornament leaf-floater-olive leaf-deco-4" viewBox="0 0 120 120" fill="currentColor">
+      <path d="M60 15 C35 35 35 75 60 105 C85 75 85 35 60 15 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 15 L60 105" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M42 45 C48 48 55 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M78 45 C72 48 65 52 60 55" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M40 65 C48 67 55 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M80 65 C72 67 65 70 60 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M45 85 C50 86 55 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M75 85 C70 86 65 88 60 89" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <div class="bg-ornament blob-blur blob-soft" style="width:260px;height:260px;bottom:-40px;right:-80px;animation:drift 19s ease-in-out infinite alternate;"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0,40 C480,0 960,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg-ivory)"/></svg>
+    </div>
+    <p>© 2026 <strong>PT. Dapoer Noyutri Malino</strong> · Bakpia Malino · Oleh-Oleh Khas Sulawesi Selatan</p>
+    <p style="margin-top:0.5rem;">
+      <a href="https://wa.me/6285261214130">WhatsApp</a> ·
+      <a href="https://instagram.com/dapoer_noyutri">Instagram</a> ·
+      <a href="mailto:dapoernoyutri21@gmail.com">Email</a>
+    </p>
+  </footer>
+
+  <!-- WHATSAPP FAB -->
+  <a href="https://wa.me/6285261214130?text=Halo%2C%20saya%20ingin%20pesan%20Bakpia%20Malino" class="wa-fab" id="wa-fab" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.473 2.027 7.774L0 32l8.468-2.004A15.934 15.934 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.264 13.264 0 01-6.76-1.848l-.485-.288-5.025 1.188 1.262-4.9-.318-.503A13.267 13.267 0 012.667 16C2.667 8.637 8.637 2.667 16 2.667S29.333 8.637 29.333 16 23.363 29.333 16 29.333zm7.274-9.842c-.398-.2-2.357-1.163-2.72-1.295-.364-.134-.63-.2-.895.2-.266.397-1.03 1.295-1.263 1.561-.232.266-.464.3-.862.1-.398-.2-1.681-.62-3.204-1.98-1.184-1.057-1.984-2.363-2.217-2.76-.232-.398-.025-.612.175-.81.18-.178.397-.464.596-.697.2-.232.266-.397.398-.663.133-.266.066-.497-.033-.696-.1-.2-.895-2.157-1.228-2.953-.323-.774-.652-.668-.895-.68a16.22 16.22 0 00-.763-.015c-.265 0-.696.1-1.061.497-.364.398-1.393 1.362-1.393 3.32s1.427 3.851 1.626 4.117c.2.265 2.808 4.285 6.803 6.011.95.41 1.692.655 2.27.838.953.303 1.82.26 2.505.158.764-.114 2.357-.964 2.69-1.895.332-.93.332-1.728.232-1.895-.1-.168-.365-.265-.763-.465z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Intersection Observer for reveal animations
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // Step animations
+    const steps = document.querySelectorAll('.step');
+    const stepObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 150);
+          stepObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    steps.forEach(s => stepObs.observe(s));
+  </script>
+</body>
+</html>
