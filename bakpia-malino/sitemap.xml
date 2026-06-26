@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bakpiamalino.dekatlokal.com/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/gambar-hero.png</image:loc>
+      <image:title>Bakpia Malino semua varian rasa</image:title>
+      <image:caption>Bakpia Malino varian markisa, coklat, keju, ubi ungu, kacang hijau, dan mix khas Malino Gowa.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/bakpia-markisa.png</image:loc>
+      <image:title>Bakpia Markisa</image:title>
+      <image:caption>Bakpia Malino rasa markisa dengan isian selai markisa segar khas Malino.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/bakpia-coklat.png</image:loc>
+      <image:title>Bakpia Coklat</image:title>
+      <image:caption>Bakpia Malino rasa coklat premium untuk oleh-oleh keluarga.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/bakpia-ubi-ungu.png</image:loc>
+      <image:title>Bakpia Ubi Ungu</image:title>
+      <image:caption>Bakpia Malino rasa ubi ungu khas Gowa, Sulawesi Selatan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/bakpia-keju.png</image:loc>
+      <image:title>Bakpia Keju</image:title>
+      <image:caption>Bakpia Malino rasa keju gurih dengan kulit bakpia renyah.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/bakpia-kacang%20hijau.png</image:loc>
+      <image:title>Bakpia Kacang Hijau</image:title>
+      <image:caption>Bakpia Malino rasa kacang hijau klasik yang legit.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bakpiamalino.dekatlokal.com/foto/bakpia-mix.png</image:loc>
+      <image:title>Bakpia Mix</image:title>
+      <image:caption>Bakpia Malino paket mix berisi pilihan rasa dalam satu kotak.</image:caption>
+    </image:image>
+  </url>
+</urlset>

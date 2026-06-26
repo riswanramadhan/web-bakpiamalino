@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /video_test.html
+
+Sitemap: https://bakpiamalino.dekatlokal.com/sitemap.xml
